@@ -1,0 +1,148 @@
+INFO [02-21|18:39:09.711] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [02-21|18:39:09.715] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+INFO [02-21|18:39:09.720] Snap sync requested, enabling --snapshot 
+INFO [02-21|18:39:09.720] Set global gas cap                       cap=50,000,000
+INFO [02-21|18:39:09.722] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
+INFO [02-21|18:39:09.723] Allocated cache and file handles         database=/home/jeff/private_chain/data/geth/chaindata cache=512.00MiB handles=524,288
+INFO [02-21|18:39:09.783] Opened ancient database                  database=/home/jeff/private_chain/data/geth/chaindata/ancient/chain readonly=false
+INFO [02-21|18:39:09.788]  
+INFO [02-21|18:39:09.788] --------------------------------------------------------------------------------------------------------------------------------------------------------- 
+INFO [02-21|18:39:09.788] Chain ID:  10 (unknown) 
+INFO [02-21|18:39:09.788] Consensus: unknown 
+INFO [02-21|18:39:09.788]  
+INFO [02-21|18:39:09.788] Pre-Merge hard forks: 
+INFO [02-21|18:39:09.788]  - Homestead:                   0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/homestead.md) 
+INFO [02-21|18:39:09.788]  - Tangerine Whistle (EIP 150): 0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/tangerine-whistle.md) 
+INFO [02-21|18:39:09.788]  - Spurious Dragon/1 (EIP 155): 0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md) 
+INFO [02-21|18:39:09.788]  - Spurious Dragon/2 (EIP 158): 0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md) 
+INFO [02-21|18:39:09.788]  - Byzantium:                   0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/byzantium.md) 
+INFO [02-21|18:39:09.788]  - Constantinople:              0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/constantinople.md) 
+INFO [02-21|18:39:09.788]  - Petersburg:                  <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/petersburg.md) 
+INFO [02-21|18:39:09.788]  - Istanbul:                    <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/istanbul.md) 
+INFO [02-21|18:39:09.788]  - Berlin:                      <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/berlin.md) 
+INFO [02-21|18:39:09.788]  - London:                      <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/london.md) 
+INFO [02-21|18:39:09.788]  
+INFO [02-21|18:39:09.788] The Merge is not yet available for this network! 
+INFO [02-21|18:39:09.788]  - Hard-fork specification: https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md 
+INFO [02-21|18:39:09.788] --------------------------------------------------------------------------------------------------------------------------------------------------------- 
+INFO [02-21|18:39:09.788]  
+INFO [02-21|18:39:09.789] Disk storage enabled for ethash caches   dir=/home/jeff/private_chain/data/geth/ethash count=3
+INFO [02-21|18:39:09.789] Disk storage enabled for ethash DAGs     dir=/home/jeff/.ethash count=2
+INFO [02-21|18:39:09.794] Initialising Ethereum protocol           network=10 dbversion=8
+INFO [02-21|18:39:09.819] Loaded most recent local header          number=905 hash=45385a..2953fd td=144,524,592 age=3w1h1m
+INFO [02-21|18:39:09.821] Loaded most recent local full block      number=905 hash=45385a..2953fd td=144,524,592 age=3w1h1m
+INFO [02-21|18:39:09.821] Loaded most recent local fast block      number=905 hash=45385a..2953fd td=144,524,592 age=3w1h1m
+WARN [02-21|18:39:09.822] Head state missing, repairing            number=905 hash=45385a..2953fd snaproot=da7326..4bb8b4
+INFO [02-21|18:39:09.852] Loaded most recent local header          number=905 hash=45385a..2953fd td=144,524,592 age=3w1h1m
+INFO [02-21|18:39:09.852] Loaded most recent local full block      number=476 hash=aa52be..c1196c td=70,036,435  age=3w1d18h
+INFO [02-21|18:39:09.852] Loaded most recent local fast block      number=905 hash=45385a..2953fd td=144,524,592 age=3w1h1m
+WARN [02-21|18:39:09.852] Loaded snapshot journal                  diffs=missing
+INFO [02-21|18:39:09.855] Setting new local account                address=0x8AE9625821E1bB233432522da632A8F9f2e7A243
+INFO [02-21|18:39:09.858] Loaded local transaction journal         transactions=5 dropped=0
+INFO [02-21|18:39:09.859] Regenerated local transaction journal    transactions=5 accounts=1
+WARN [02-21|18:39:09.859] Switch sync mode from snap sync to full sync 
+INFO [02-21|18:39:09.863] Gasprice oracle is ignoring threshold set threshold=2
+WARN [02-21|18:39:09.863] Old unclean shutdowns found              count=22
+WARN [02-21|18:39:09.863] Unclean shutdown detected                booted=2024-01-28T00:42:52+0800 age=3w3d17h
+WARN [02-21|18:39:09.863] Unclean shutdown detected                booted=2024-01-28T00:43:39+0800 age=3w3d17h
+WARN [02-21|18:39:09.863] Unclean shutdown detected                booted=2024-01-28T00:44:28+0800 age=3w3d17h
+WARN [02-21|18:39:09.863] Unclean shutdown detected                booted=2024-01-28T00:44:45+0800 age=3w3d17h
+WARN [02-21|18:39:09.863] Unclean shutdown detected                booted=2024-01-28T00:46:03+0800 age=3w3d17h
+WARN [02-21|18:39:09.863] Unclean shutdown detected                booted=2024-01-28T00:46:41+0800 age=3w3d17h
+WARN [02-21|18:39:09.863] Unclean shutdown detected                booted=2024-01-28T00:46:56+0800 age=3w3d17h
+WARN [02-21|18:39:09.863] Unclean shutdown detected                booted=2024-01-28T00:47:46+0800 age=3w3d17h
+WARN [02-21|18:39:09.863] Unclean shutdown detected                booted=2024-01-28T23:38:01+0800 age=3w2d19h
+WARN [02-21|18:39:09.864] Unclean shutdown detected                booted=2024-01-30T00:14:58+0800 age=3w1d18h
+WARN [02-21|18:39:09.864] Unclean shutdown detected                booted=2024-01-31T17:37:02+0800 age=3w1h2m
+WARN [02-21|18:39:09.864] Engine API enabled                       protocol=eth
+WARN [02-21|18:39:09.866] Engine API started but chain not configured for merge yet 
+INFO [02-21|18:39:09.876] Starting peer-to-peer node               instance=Geth/v1.10.26-stable-e5eb32ac/linux-amd64/go1.18.5
+INFO [02-21|18:39:10.115] New local node record                    seq=1,704,283,475,858 id=b803b143cbe9c819 ip=127.0.0.1 udp=30303 tcp=30303
+INFO [02-21|18:39:10.124] Started P2P networking                   self=enode://00a24abe55ab8d8f9bb08078da99a3b1e843249afee7a7c743f43f87d1d0df38500148eb96a75ab36f61891676ad57a270c24cbde10d280a03aa2a7c5bd2560c@127.0.0.1:30303
+INFO [02-21|18:39:10.134] IPC endpoint opened                      url=/home/jeff/private_chain/data/geth.ipc
+ERROR[02-21|18:39:10.134] Unavailable modules in HTTP API list     unavailable=[db] available="[admin debug web3 eth txpool personal ethash miner net]"
+INFO [02-21|18:39:10.135] Loaded JWT secret file                   path=/home/jeff/private_chain/data/geth/jwtsecret crc32=0xa3469239
+INFO [02-21|18:39:10.136] HTTP server started                      endpoint=[::]:8545 auth=false prefix= cors=* vhosts=*
+INFO [02-21|18:39:10.136] WebSocket enabled                        url=ws://127.0.0.1:8551
+INFO [02-21|18:39:10.136] HTTP server started                      endpoint=127.0.0.1:8551 auth=true  prefix= cors=localhost vhosts=localhost
+WARN [02-21|18:39:10.137] ------------------------------------------------------------------- 
+WARN [02-21|18:39:10.137] Referring to accounts by order in the keystore folder is dangerous! 
+WARN [02-21|18:39:10.137] This functionality is deprecated and will be removed in the future! 
+WARN [02-21|18:39:10.138] Please use explicit addresses! (can search via `geth account list`) 
+WARN [02-21|18:39:10.138] ------------------------------------------------------------------- 
+WARN [02-21|18:39:10.703] Snapshot extension registration failed   peer=6b36f791 err="peer connected on snap without compatible eth support"
+INFO [02-21|18:39:11.980] Unlocked account                         address=0x8AE9625821E1bB233432522da632A8F9f2e7A243
+WARN [02-21|18:39:11.981] ------------------------------------------------------------------- 
+WARN [02-21|18:39:11.981] Referring to accounts by order in the keystore folder is dangerous! 
+WARN [02-21|18:39:11.981] This functionality is deprecated and will be removed in the future! 
+WARN [02-21|18:39:11.981] Please use explicit addresses! (can search via `geth account list`) 
+WARN [02-21|18:39:11.981] ------------------------------------------------------------------- 
+INFO [02-21|18:39:13.350] New local node record                    seq=1,704,283,475,859 id=b803b143cbe9c819 ip=42.79.144.53 udp=13724 tcp=30303
+INFO [02-21|18:39:13.459] Unlocked account                         address=0x679569EBDa8da95065445521DD0e7Db0D7D79A17
+INFO [02-21|18:39:13.552] Etherbase automatically configured       address=0x8AE9625821E1bB233432522da632A8F9f2e7A243
+INFO [02-21|18:39:21.202] Looking for peers                        peercount=0 tried=119 static=0
+WARN [02-21|18:39:30.150] Snapshot extension registration failed   peer=e036be6e err="peer connected on snap without compatible eth support"
+INFO [02-21|18:39:31.734] Looking for peers                        peercount=0 tried=144 static=0
+INFO [02-21|18:39:42.840] Looking for peers                        peercount=1 tried=106 static=0
+INFO [02-21|18:39:52.840] Looking for peers                        peercount=0 tried=31  static=0
+WARN [02-21|18:39:59.022] Snapshot extension registration failed   peer=6b36f791 err="peer connected on snap without compatible eth support"
+WARN [02-21|18:40:01.864] Snapshot extension registration failed   peer=7eb27b8c err="peer connected on snap without compatible eth support"
+INFO [02-21|18:40:03.211] Looking for peers                        peercount=0 tried=136 static=0
+WARN [02-21|18:40:10.052] Snapshot extension registration failed   peer=ef2d7ab8 err="peer connected on snap without compatible eth support"
+INFO [02-21|18:40:13.290] Looking for peers                        peercount=0 tried=55  static=0
+WARN [02-21|18:40:22.358] Snapshot extension registration failed   peer=6cea4362 err="peer connected on snap without compatible eth support"
+WARN [02-21|18:40:23.313] Snapshot extension registration failed   peer=3ddc2dc1 err="peer connected on snap without compatible eth support"
+INFO [02-21|18:40:23.313] Looking for peers                        peercount=2 tried=57  static=0
+WARN [02-21|18:40:31.675] Snapshot extension registration failed   peer=8e27f2de err="peer connected on snap without compatible eth support"
+INFO [02-21|18:40:32.148] Block synchronisation started 
+WARN [02-21|18:40:32.773] Snapshot extension registration failed   peer=9a2b0e7d err="peer connected on snap without compatible eth support"
+INFO [02-21|18:40:33.318] Looking for peers                        peercount=0 tried=170 static=0
+WARN [02-21|18:40:41.975] Snapshot extension registration failed   peer=6b36f791 err="peer connected on snap without compatible eth support"
+INFO [02-21|18:40:43.449] Looking for peers                        peercount=0 tried=25  static=0
+WARN [02-21|18:40:49.952] Snapshot extension registration failed   peer=4ee1e283 err="peer connected on snap without compatible eth support"
+INFO [02-21|18:40:54.705] Looking for peers                        peercount=0 tried=169 static=0
+INFO [02-21|18:41:04.764] Looking for peers                        peercount=0 tried=118 static=0
+INFO [02-21|18:41:14.909] Looking for peers                        peercount=0 tried=77  static=0
+INFO [02-21|18:41:24.915] Looking for peers                        peercount=0 tried=31  static=0
+WARN [02-21|18:41:28.801] Snapshot extension registration failed   peer=d848742f err="peer connected on snap without compatible eth support"
+WARN [02-21|18:41:32.150] Synchronisation failed, dropping peer    peer=147b84539f07a9570e5906798e76bc31e91ce93620014e55fa9f05880dd07f73 err=timeout
+INFO [02-21|18:41:34.954] Looking for peers                        peercount=0 tried=79  static=0
+INFO [02-21|18:41:44.975] Looking for peers                        peercount=0 tried=72  static=0
+INFO [02-21|18:41:56.402] Looking for peers                        peercount=0 tried=79  static=0
+WARN [02-21|18:41:58.539] Snapshot extension registration failed   peer=6b36f791 err="peer connected on snap without compatible eth support"
+INFO [02-21|18:42:06.619] Looking for peers                        peercount=0 tried=129 static=0
+INFO [02-21|18:42:16.718] Looking for peers                        peercount=0 tried=59  static=0
+WARN [02-21|18:42:20.758] Snapshot extension registration failed   peer=aa82357f err="peer connected on snap without compatible eth support"
+INFO [02-21|18:42:26.730] Looking for peers                        peercount=2 tried=74  static=0
+INFO [02-21|18:42:36.755] Looking for peers                        peercount=1 tried=106 static=0
+INFO [02-21|18:42:46.757] Looking for peers                        peercount=2 tried=82  static=0
+WARN [02-21|18:42:48.234] Snapshot extension registration failed   peer=182fb790 err="peer connected on snap without compatible eth support"
+WARN [02-21|18:42:50.421] Snapshot extension registration failed   peer=e9b4e44c err="peer connected on snap without compatible eth support"
+INFO [02-21|18:42:56.758] Looking for peers                        peercount=0 tried=137 static=0
+WARN [02-21|18:43:01.617] Snapshot extension registration failed   peer=6b36f791 err="peer connected on snap without compatible eth support"
+WARN [02-21|18:43:11.155] Snapshot extension registration failed   peer=3f0f677f err="peer connected on snap without compatible eth support"
+WARN [02-21|18:43:11.187] Snapshot extension registration failed   peer=3f2f7575 err="peer connected on snap without compatible eth support"
+INFO [02-21|18:43:17.105] Looking for peers                        peercount=0 tried=142 static=0
+INFO [02-21|18:43:27.119] Looking for peers                        peercount=2 tried=132 static=0
+INFO [02-21|18:43:37.166] Looking for peers                        peercount=0 tried=124 static=0
+INFO [02-21|18:43:47.326] Looking for peers                        peercount=0 tried=53  static=0
+INFO [02-21|18:43:57.399] Looking for peers                        peercount=0 tried=124 static=0
+WARN [02-21|18:44:02.373] Snapshot extension registration failed   peer=6b36f791 err="peer connected on snap without compatible eth support"
+WARN [02-21|18:44:05.462] Snapshot extension registration failed   peer=686393d1 err="peer connected on snap without compatible eth support"
+INFO [02-21|18:44:08.873] Looking for peers                        peercount=0 tried=94  static=0
+INFO [02-21|18:44:18.938] Looking for peers                        peercount=0 tried=117 static=0
+INFO [02-21|18:44:29.056] Looking for peers                        peercount=0 tried=29  static=0
+WARN [02-21|18:44:31.950] Snapshot extension registration failed   peer=291b513a err="peer connected on snap without compatible eth support"
+INFO [02-21|18:44:39.167] Looking for peers                        peercount=1 tried=186 static=0
+WARN [02-21|18:44:41.297] Snapshot extension registration failed   peer=6b36f791 err="peer connected on snap without compatible eth support"
+INFO [02-21|18:44:49.202] Looking for peers                        peercount=0 tried=74  static=0
+WARN [02-21|18:44:52.179] Snapshot extension registration failed   peer=9ab95370 err="peer connected on snap without compatible eth support"
+INFO [02-21|18:44:59.305] Looking for peers                        peercount=0 tried=46  static=0
+INFO [02-21|18:45:09.370] Looking for peers                        peercount=0 tried=103 static=0
+WARN [02-21|18:45:16.404] Snapshot extension registration failed   peer=a05e766c err="peer connected on snap without compatible eth support"
+INFO [02-21|18:45:19.397] Looking for peers                        peercount=0 tried=73  static=0
+INFO [02-21|18:45:29.769] Looking for peers                        peercount=0 tried=61  static=0
+WARN [02-21|18:45:37.436] Snapshot extension registration failed   peer=6b36f791 err="peer connected on snap without compatible eth support"
+INFO [02-21|18:45:39.798] Looking for peers                        peercount=0 tried=90  static=0
+INFO [02-21|18:45:49.857] Looking for peers                        peercount=2 tried=163 static=0
+INFO [02-21|18:46:00.139] Looking for peers                        peercount=0 tried=102 static=0
