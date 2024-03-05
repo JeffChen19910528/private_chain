@@ -17,8 +17,25 @@ class Contract:
             contract_abi = contract_json['abi']  # fetch contract's abi - necessary to call its functions
         print('abi: ' + str(contract_abi))
         contract = web3.eth.contract(address=deployed_contract_address, abi=contract_abi)
-        messagge = contract.functions.getNumber().call() 
-        print(messagge)
+        tx_hash = contract.functions.withdraw(100).transact({
+                    'from': accounts[0],  # 替换为你的账户地址
+                    'gas': 100000  # 适当设置gas限额
+        })
+        receipt = web3.eth.wait_for_transaction_receipt(tx_hash)
+        
+        tx_hash = contract.functions.deposit().transact({
+            'from': accounts[0],  # 替换为你的账户地址
+            'value': 200000,  # 替换为你想要存款的金额，以wei为单位
+            'gas': 100000  # 适当设置gas限额
+        })
+        receipt = web3.eth.wait_for_transaction_receipt(tx_hash)
+
+        balance = contract.functions.getBalance().call()
+        print("Account Balance:", balance)
+        # 调用 getTotalBalance 函数获取存款总额
+        total_balance = contract.functions.getTotalBalance().call()
+
+        print("Total balance in contract:", total_balance)
 
 class Password:
     def __init__(self):
