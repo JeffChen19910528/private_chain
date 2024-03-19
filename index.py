@@ -66,14 +66,6 @@ for account in accounts:
     web3.geth.personal.unlock_account(str(account), pwd[count].strip())
     count += 1
 
-tx_hash = web3.eth.send_transaction({
-    "from": accounts[0],
-    "to": accounts[1],
-    "value": 123
-})
-
-tx = web3.eth.get_transaction(tx_hash)
-print('tx hash: ' + str(tx))
 ct = Contract()
 ct.getContract()
 
