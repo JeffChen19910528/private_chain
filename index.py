@@ -40,8 +40,12 @@ class Contract:
             'gasPrice': web3.to_wei('50', 'gwei'),
             'nonce': nonce,
         })
+        pk_path = 'private_key.txt'
+        f = open(pk_path, 'r')
+        pk = f.read().strip()
+        print(pk)
         # 签名交易
-        signed_txn = web3.eth.account.sign_transaction(transaction, '0x90eee9fcf6901b0814d1753a864a2c49fe6fa92d891960bd8ca5ed7d15309f79')
+        signed_txn = web3.eth.account.sign_transaction(transaction, pk)
         # 发送交易
         tx_hash = web3.eth.send_raw_transaction(signed_txn.rawTransaction)
         # 获取交易哈希
