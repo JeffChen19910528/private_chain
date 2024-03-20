@@ -3,3 +3,6 @@ miner.start(3)
 miner.start3)
 miner.start()
 eth.blockNumber
+miner.start
+miner.start()
+miner.start(3)

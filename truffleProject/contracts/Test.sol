@@ -2,9 +2,14 @@ pragma solidity ^0.8.0;
 
 contract Test {
     mapping(address => uint256) private balances;
-
+    address public owner;
     event Deposit(address indexed depositor, uint256 amount);
     event Withdrawal(address indexed withdrawer, uint256 amount);
+    event Transfer(address indexed to, uint amount);
+
+     constructor() {
+        owner = msg.sender;
+    }
 
     function deposit() public payable {
         require(msg.value > 0, "Deposit amount must be greater than 0");
@@ -19,6 +24,13 @@ contract Test {
         balances[msg.sender] -= amount;
         payable(msg.sender).transfer(amount);
         emit Withdrawal(msg.sender, amount);
+    }
+
+    function transfer(address payable _to, uint _amount) public {
+        require(msg.sender == owner, "Only the owner can perform this action");
+        require(address(this).balance >= _amount, "Insufficient balance in contract");
+        _to.transfer(_amount);
+        emit Transfer(_to, _amount);
     }
 
     function getBalance() public view returns (uint256) {
