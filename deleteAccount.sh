@@ -18,7 +18,13 @@ display_file_content() {
 
 # 定义一个函数用于删除指定行号的内容
 delete_line() {
-    local line_number=$1
+    local line_number="$1"
+    let line_number=line_number+1
+    
+    if [[ ! -f "$FILES" ]]; then
+        echo "錯誤：檔案 '$FILES' 不存在。"
+        return 1
+    fi
     sed -i "${line_number}d" "$FILES"
 }
 
@@ -96,3 +102,4 @@ delete_line $INDEX
 # 最后，再次显示文件的最终内容
 display_file_content
 echo "更新完成。"
+./init.sh
