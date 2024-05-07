@@ -45,7 +45,10 @@ else:
 print('block_number: ' + str(web3.eth.block_number))
 print('accounts: ' + str(web3.eth.accounts))
 accounts = web3.eth.accounts
-print('account balance: ' + str(web3.eth.get_balance(accounts[0])))
+count = 0
+for account in accounts:
+    print('account balance'+ str(count) +': ' + str(web3.eth.get_balance(account)))
+    count += 1
 
 pw = Password()
 pwd = pw.getPassword()
