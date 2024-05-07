@@ -6,3 +6,5 @@ eth.blockNumber
 miner.start
 miner.start()
 miner.start(3)
+eth.accounts
+eth.getBalance(eth.accounts[1])
