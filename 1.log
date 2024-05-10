@@ -1,61 +1,1020 @@
-INFO [03-21|23:29:55.551] Maximum peer count                       ETH=50 LES=0 total=50
-INFO [03-21|23:29:55.553] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
-INFO [03-21|23:29:55.556] Snap sync requested, enabling --snapshot 
-INFO [03-21|23:29:55.556] Set global gas cap                       cap=50,000,000
-INFO [03-21|23:29:55.558] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
-INFO [03-21|23:29:55.560] Allocated cache and file handles         database=/home/jeff/private_chain/data/geth/chaindata cache=512.00MiB handles=524,288
-INFO [03-21|23:29:55.573] Opened ancient database                  database=/home/jeff/private_chain/data/geth/chaindata/ancient/chain readonly=false
-INFO [03-21|23:29:55.573]  
-INFO [03-21|23:29:55.573] --------------------------------------------------------------------------------------------------------------------------------------------------------- 
-INFO [03-21|23:29:55.573] Chain ID:  10 (unknown) 
-INFO [03-21|23:29:55.573] Consensus: unknown 
-INFO [03-21|23:29:55.573]  
-INFO [03-21|23:29:55.573] Pre-Merge hard forks: 
-INFO [03-21|23:29:55.574]  - Homestead:                   0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/homestead.md) 
-INFO [03-21|23:29:55.574]  - Tangerine Whistle (EIP 150): 0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/tangerine-whistle.md) 
-INFO [03-21|23:29:55.574]  - Spurious Dragon/1 (EIP 155): 0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md) 
-INFO [03-21|23:29:55.574]  - Spurious Dragon/2 (EIP 158): 0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md) 
-INFO [03-21|23:29:55.574]  - Byzantium:                   0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/byzantium.md) 
-INFO [03-21|23:29:55.574]  - Constantinople:              0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/constantinople.md) 
-INFO [03-21|23:29:55.574]  - Petersburg:                  <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/petersburg.md) 
-INFO [03-21|23:29:55.574]  - Istanbul:                    <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/istanbul.md) 
-INFO [03-21|23:29:55.574]  - Berlin:                      <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/berlin.md) 
-INFO [03-21|23:29:55.574]  - London:                      <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/london.md) 
-INFO [03-21|23:29:55.574]  
-INFO [03-21|23:29:55.574] The Merge is not yet available for this network! 
-INFO [03-21|23:29:55.574]  - Hard-fork specification: https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md 
-INFO [03-21|23:29:55.574] --------------------------------------------------------------------------------------------------------------------------------------------------------- 
-INFO [03-21|23:29:55.574]  
-INFO [03-21|23:29:55.574] Disk storage enabled for ethash caches   dir=/home/jeff/private_chain/data/geth/ethash count=3
-INFO [03-21|23:29:55.574] Disk storage enabled for ethash DAGs     dir=/home/jeff/.ethash count=2
-INFO [03-21|23:29:55.576] Initialising Ethereum protocol           network=10 dbversion=<nil>
-INFO [03-21|23:29:55.576] Loaded most recent local header          number=0 hash=d89881..a54163 td=8192 age=55y3d15h
-INFO [03-21|23:29:55.576] Loaded most recent local full block      number=0 hash=d89881..a54163 td=8192 age=55y3d15h
-INFO [03-21|23:29:55.576] Loaded most recent local fast block      number=0 hash=d89881..a54163 td=8192 age=55y3d15h
-WARN [03-21|23:29:55.576] Failed to load snapshot, regenerating    err="missing or corrupted snapshot"
-INFO [03-21|23:29:55.577] Rebuilding state snapshot 
-INFO [03-21|23:29:55.577] Resuming state snapshot generation       root=270a39..5789ab accounts=0 slots=0 storage=0.00B dangling=0 elapsed="660.452µs"
-INFO [03-21|23:29:55.578] Regenerated local transaction journal    transactions=0 accounts=0
-INFO [03-21|23:29:55.578] Generated state snapshot                 accounts=1 slots=0 storage=47.00B dangling=0 elapsed=1.257ms
-INFO [03-21|23:29:55.579] Gasprice oracle is ignoring threshold set threshold=2
-WARN [03-21|23:29:55.579] Error reading unclean shutdown markers   error="leveldb: not found"
-WARN [03-21|23:29:55.580] Engine API enabled                       protocol=eth
-WARN [03-21|23:29:55.580] Engine API started but chain not configured for merge yet 
-INFO [03-21|23:29:55.580] Starting peer-to-peer node               instance=Geth/v1.10.26-stable-e5eb32ac/linux-amd64/go1.18.5
-INFO [03-21|23:29:55.586] New local node record                    seq=1,711,034,995,585 id=5f6b13d6450a5560 ip=127.0.0.1 udp=30303 tcp=30303
-INFO [03-21|23:29:55.588] IPC endpoint opened                      url=/home/jeff/private_chain/data/geth.ipc
-ERROR[03-21|23:29:55.588] Unavailable modules in HTTP API list     unavailable=[db] available="[admin debug web3 eth txpool personal ethash miner net]"
-INFO [03-21|23:29:55.588] Generated JWT secret                     path=/home/jeff/private_chain/data/geth/jwtsecret
-INFO [03-21|23:29:55.589] HTTP server started                      endpoint=[::]:8545 auth=false prefix= cors=* vhosts=*
-INFO [03-21|23:29:55.589] WebSocket enabled                        url=ws://127.0.0.1:8551
-INFO [03-21|23:29:55.589] HTTP server started                      endpoint=127.0.0.1:8551 auth=true  prefix= cors=localhost vhosts=localhost
-WARN [03-21|23:29:55.589] ------------------------------------------------------------------- 
-WARN [03-21|23:29:55.589] Referring to accounts by order in the keystore folder is dangerous! 
-WARN [03-21|23:29:55.589] This functionality is deprecated and will be removed in the future! 
-WARN [03-21|23:29:55.589] Please use explicit addresses! (can search via `geth account list`) 
-WARN [03-21|23:29:55.589] ------------------------------------------------------------------- 
-INFO [03-21|23:29:55.601] Started P2P networking                   self=enode://1901c55c3ef80a92c24f8971c54d49e39e667968236d977e79671eea99dcc792588ebeddb88a1c3f51975668642beb109e6c8a8ef75257a3c5cab72e81dd09a5@127.0.0.1:30303
-WARN [03-21|23:29:56.034] Snapshot extension registration failed   peer=6b36f791 err="peer connected on snap without compatible eth support"
-INFO [03-21|23:29:57.394] New local node record                    seq=1,711,034,995,586 id=5f6b13d6450a5560 ip=122.116.36.172 udp=30303 tcp=30303
-WARN [03-21|23:29:58.743] Snapshot extension registration failed   peer=bd16cb55 err="peer connected on snap without compatible eth support"
-Fatal: Failed to unlock account 0 (could not decrypt key with given password)
+INFO [05-10|23:13:07.297] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [05-10|23:13:07.305] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+INFO [05-10|23:13:07.307] Snap sync requested, enabling --snapshot 
+INFO [05-10|23:13:07.307] Set global gas cap                       cap=50,000,000
+INFO [05-10|23:13:07.310] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
+INFO [05-10|23:13:07.310] Allocated cache and file handles         database=/home/jeff/private_chain/data/geth/chaindata cache=512.00MiB handles=524,288
+INFO [05-10|23:13:07.331] Opened ancient database                  database=/home/jeff/private_chain/data/geth/chaindata/ancient/chain readonly=false
+INFO [05-10|23:13:07.332]  
+INFO [05-10|23:13:07.332] --------------------------------------------------------------------------------------------------------------------------------------------------------- 
+INFO [05-10|23:13:07.332] Chain ID:  10 (unknown) 
+INFO [05-10|23:13:07.332] Consensus: unknown 
+INFO [05-10|23:13:07.332]  
+INFO [05-10|23:13:07.332] Pre-Merge hard forks: 
+INFO [05-10|23:13:07.332]  - Homestead:                   0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/homestead.md) 
+INFO [05-10|23:13:07.332]  - Tangerine Whistle (EIP 150): 0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/tangerine-whistle.md) 
+INFO [05-10|23:13:07.332]  - Spurious Dragon/1 (EIP 155): 0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md) 
+INFO [05-10|23:13:07.332]  - Spurious Dragon/2 (EIP 158): 0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md) 
+INFO [05-10|23:13:07.332]  - Byzantium:                   0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/byzantium.md) 
+INFO [05-10|23:13:07.333]  - Constantinople:              0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/constantinople.md) 
+INFO [05-10|23:13:07.333]  - Petersburg:                  <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/petersburg.md) 
+INFO [05-10|23:13:07.333]  - Istanbul:                    <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/istanbul.md) 
+INFO [05-10|23:13:07.333]  - Berlin:                      <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/berlin.md) 
+INFO [05-10|23:13:07.333]  - London:                      <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/london.md) 
+INFO [05-10|23:13:07.333]  
+INFO [05-10|23:13:07.333] The Merge is not yet available for this network! 
+INFO [05-10|23:13:07.333]  - Hard-fork specification: https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md 
+INFO [05-10|23:13:07.333] --------------------------------------------------------------------------------------------------------------------------------------------------------- 
+INFO [05-10|23:13:07.333]  
+INFO [05-10|23:13:07.333] Disk storage enabled for ethash caches   dir=/home/jeff/private_chain/data/geth/ethash count=3
+INFO [05-10|23:13:07.334] Disk storage enabled for ethash DAGs     dir=/home/jeff/.ethash count=2
+INFO [05-10|23:13:07.334] Initialising Ethereum protocol           network=10 dbversion=8
+INFO [05-10|23:13:07.339] Loaded most recent local header          number=76 hash=a4da94..93d659 td=10,062,862 age=1d23h34m
+INFO [05-10|23:13:07.339] Loaded most recent local full block      number=76 hash=a4da94..93d659 td=10,062,862 age=1d23h34m
+INFO [05-10|23:13:07.339] Loaded most recent local fast block      number=76 hash=a4da94..93d659 td=10,062,862 age=1d23h34m
+INFO [05-10|23:13:07.341] Loaded local transaction journal         transactions=0 dropped=0
+INFO [05-10|23:13:07.341] Regenerated local transaction journal    transactions=0 accounts=0
+WARN [05-10|23:13:07.341] Switch sync mode from snap sync to full sync 
+INFO [05-10|23:13:07.342] Gasprice oracle is ignoring threshold set threshold=2
+WARN [05-10|23:13:07.342] Old unclean shutdowns found              count=6
+WARN [05-10|23:13:07.342] Unclean shutdown detected                booted=2024-05-08T20:33:02+0800 age=2d2h40m
+WARN [05-10|23:13:07.342] Unclean shutdown detected                booted=2024-05-08T23:18:19+0800 age=1d23h54m
+WARN [05-10|23:13:07.342] Unclean shutdown detected                booted=2024-05-08T23:21:45+0800 age=1d23h51m
+WARN [05-10|23:13:07.342] Unclean shutdown detected                booted=2024-05-08T23:22:37+0800 age=1d23h50m
+WARN [05-10|23:13:07.342] Unclean shutdown detected                booted=2024-05-08T23:23:47+0800 age=1d23h49m
+WARN [05-10|23:13:07.342] Unclean shutdown detected                booted=2024-05-08T23:24:51+0800 age=1d23h48m
+WARN [05-10|23:13:07.342] Unclean shutdown detected                booted=2024-05-08T23:25:49+0800 age=1d23h47m
+WARN [05-10|23:13:07.342] Unclean shutdown detected                booted=2024-05-08T23:31:58+0800 age=1d23h41m
+WARN [05-10|23:13:07.342] Unclean shutdown detected                booted=2024-05-08T23:38:55+0800 age=1d23h34m
+WARN [05-10|23:13:07.342] Unclean shutdown detected                booted=2024-05-08T23:39:29+0800 age=1d23h33m
+WARN [05-10|23:13:07.342] Unclean shutdown detected                booted=2024-05-08T23:40:30+0800 age=1d23h32m
+WARN [05-10|23:13:07.342] Engine API enabled                       protocol=eth
+WARN [05-10|23:13:07.343] Engine API started but chain not configured for merge yet 
+INFO [05-10|23:13:07.343] Starting peer-to-peer node               instance=Geth/v1.10.26-stable-e5eb32ac/linux-amd64/go1.18.5
+INFO [05-10|23:13:07.380] New local node record                    seq=1,715,095,763,391 id=683ee8fc3483f362 ip=127.0.0.1 udp=30303 tcp=30303
+INFO [05-10|23:13:07.381] IPC endpoint opened                      url=/home/jeff/private_chain/data/geth.ipc
+ERROR[05-10|23:13:07.382] Unavailable modules in HTTP API list     unavailable=[db] available="[admin debug web3 eth txpool personal ethash miner net]"
+INFO [05-10|23:13:07.382] Loaded JWT secret file                   path=/home/jeff/private_chain/data/geth/jwtsecret crc32=0xa26811a2
+INFO [05-10|23:13:07.382] HTTP server started                      endpoint=[::]:8545 auth=false prefix= cors=* vhosts=*
+INFO [05-10|23:13:07.383] WebSocket enabled                        url=ws://127.0.0.1:8551
+INFO [05-10|23:13:07.383] HTTP server started                      endpoint=127.0.0.1:8551 auth=true  prefix= cors=localhost vhosts=localhost
+WARN [05-10|23:13:07.383] ------------------------------------------------------------------- 
+WARN [05-10|23:13:07.383] Referring to accounts by order in the keystore folder is dangerous! 
+WARN [05-10|23:13:07.383] This functionality is deprecated and will be removed in the future! 
+WARN [05-10|23:13:07.383] Please use explicit addresses! (can search via `geth account list`) 
+WARN [05-10|23:13:07.383] ------------------------------------------------------------------- 
+INFO [05-10|23:13:07.393] Started P2P networking                   self=enode://3b5d0d56e3c385d7d11d482639441de3da2a21e6a1dd11d950164fa0419cde62fed3af9fd594961824902bdca6a1f290583f948d4fbbd556f4f7ca213637b14e@127.0.0.1:30303
+WARN [05-10|23:13:07.966] Snapshot extension registration failed   peer=4fdc6ecb err="peer connected on snap without compatible eth support"
+INFO [05-10|23:13:08.105] Unlocked account                         address=0x8AE9625821E1bB233432522da632A8F9f2e7A243
+WARN [05-10|23:13:08.105] ------------------------------------------------------------------- 
+WARN [05-10|23:13:08.105] Referring to accounts by order in the keystore folder is dangerous! 
+WARN [05-10|23:13:08.105] This functionality is deprecated and will be removed in the future! 
+WARN [05-10|23:13:08.105] Please use explicit addresses! (can search via `geth account list`) 
+WARN [05-10|23:13:08.105] ------------------------------------------------------------------- 
+WARN [05-10|23:13:08.183] Snapshot extension registration failed   peer=c88ba607 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:08.193] Snapshot extension registration failed   peer=ca6e1c50 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:13:08.617] New local node record                    seq=1,715,095,763,392 id=683ee8fc3483f362 ip=122.116.36.172 udp=30303 tcp=30303
+WARN [05-10|23:13:08.631] Snapshot extension registration failed   peer=c8a3d215 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:08.633] Snapshot extension registration failed   peer=c88252d2 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:13:08.932] Unlocked account                         address=0xfe091A45072EA39434A86EF27bF23E1145E0cda8
+WARN [05-10|23:13:08.932] ------------------------------------------------------------------- 
+WARN [05-10|23:13:08.932] Referring to accounts by order in the keystore folder is dangerous! 
+WARN [05-10|23:13:08.932] This functionality is deprecated and will be removed in the future! 
+WARN [05-10|23:13:08.932] Please use explicit addresses! (can search via `geth account list`) 
+WARN [05-10|23:13:08.932] ------------------------------------------------------------------- 
+WARN [05-10|23:13:09.363] Snapshot extension registration failed   peer=ca9bf28c err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:09.714] Snapshot extension registration failed   peer=f4a55a8b err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:10.082] Snapshot extension registration failed   peer=666360fb err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:10.181] Snapshot extension registration failed   peer=690302d1 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:10.284] Snapshot extension registration failed   peer=6a23bda0 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:10.309] Snapshot extension registration failed   peer=74a491dc err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:10.315] Snapshot extension registration failed   peer=6d1b9705 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:10.555] Snapshot extension registration failed   peer=680d6fbc err="peer connected on snap without compatible eth support"
+INFO [05-10|23:13:10.657] Unlocked account                         address=0x2cAEe42780f14B980Ff3431b3986325e1A2F3046
+INFO [05-10|23:13:10.723] Etherbase automatically configured       address=0x8AE9625821E1bB233432522da632A8F9f2e7A243
+WARN [05-10|23:13:17.072] Snapshot extension registration failed   peer=93a49c92 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:13:17.444] Looking for peers                        peercount=0 tried=179 static=0
+WARN [05-10|23:13:19.489] Snapshot extension registration failed   peer=f819921f err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:19.494] Snapshot extension registration failed   peer=f8b43f7f err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:19.526] Snapshot extension registration failed   peer=f912dff6 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:20.433] Snapshot extension registration failed   peer=92a52635 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:20.650] Snapshot extension registration failed   peer=194400f4 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:20.668] Snapshot extension registration failed   peer=4f1e8fe5 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:20.857] Snapshot extension registration failed   peer=f9ae22c0 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:26.483] Snapshot extension registration failed   peer=0d89e7f9 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:13:27.473] Looking for peers                        peercount=0 tried=201 static=0
+INFO [05-10|23:13:37.502] Looking for peers                        peercount=1 tried=152 static=0
+WARN [05-10|23:13:38.573] Snapshot extension registration failed   peer=29970e1a err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:40.964] Snapshot extension registration failed   peer=6a90feab err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:40.998] Snapshot extension registration failed   peer=58cb47da err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:46.964] Snapshot extension registration failed   peer=570e5297 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:13:47.747] Looking for peers                        peercount=0 tried=145 static=0
+WARN [05-10|23:13:48.031] Snapshot extension registration failed   peer=a305c108 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:48.315] Snapshot extension registration failed   peer=43042055 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:48.476] Snapshot extension registration failed   peer=6e4e0d87 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:48.479] Snapshot extension registration failed   peer=fc82bc18 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:48.496] Snapshot extension registration failed   peer=68fc82d0 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:49.352] Snapshot extension registration failed   peer=661c2ab1 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:49.384] Snapshot extension registration failed   peer=f7acea7f err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:49.777] Snapshot extension registration failed   peer=1ad5ce96 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:49.806] Snapshot extension registration failed   peer=57d5e802 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:50.922] Snapshot extension registration failed   peer=0b93b242 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:13:51.142] Snapshot extension registration failed   peer=5535aecf err="peer connected on snap without compatible eth support"
+INFO [05-10|23:13:57.767] Looking for peers                        peercount=0 tried=147 static=0
+WARN [05-10|23:14:02.229] Snapshot extension registration failed   peer=468bbdd0 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:02.581] Snapshot extension registration failed   peer=4c44138a err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:02.760] Snapshot extension registration failed   peer=1e4255ce err="peer connected on snap without compatible eth support"
+INFO [05-10|23:14:07.870] Looking for peers                        peercount=0 tried=91  static=0
+WARN [05-10|23:14:13.884] Snapshot extension registration failed   peer=52c95cf4 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:14.126] Snapshot extension registration failed   peer=6a064f04 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:14:17.932] Looking for peers                        peercount=0 tried=117 static=0
+WARN [05-10|23:14:19.803] Snapshot extension registration failed   peer=ca6e1c50 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:20.081] Snapshot extension registration failed   peer=93a49c92 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:20.308] Snapshot extension registration failed   peer=5088c133 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:20.331] Snapshot extension registration failed   peer=13708bfc err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:20.720] Snapshot extension registration failed   peer=7947a9d6 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:20.761] Snapshot extension registration failed   peer=f0275a47 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:20.765] Snapshot extension registration failed   peer=690ba895 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:14:27.995] Looking for peers                        peercount=1 tried=105 static=0
+INFO [05-10|23:14:38.062] Looking for peers                        peercount=0 tried=130 static=0
+WARN [05-10|23:14:41.701] Snapshot extension registration failed   peer=74630ea4 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:41.857] Snapshot extension registration failed   peer=7676ecb5 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:41.874] Snapshot extension registration failed   peer=710c2037 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:43.056] Snapshot extension registration failed   peer=690302d1 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:43.195] Snapshot extension registration failed   peer=2446f94a err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:43.232] Snapshot extension registration failed   peer=e8467956 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:43.232] Snapshot extension registration failed   peer=6808cf8f err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:43.255] Snapshot extension registration failed   peer=67217151 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:43.596] Caller gas above allowance, capping      requested=3,983,703,509 cap=50,000,000
+WARN [05-10|23:14:43.598] Served eth_estimateGas                   conn=127.0.0.1:59816 reqid=13 duration=2.603826ms err="execution reverted: Not enough tokens" errdata=0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000114e6f7420656e6f75676820746f6b656e73000000000000000000000000000000
+INFO [05-10|23:14:48.079] Looking for peers                        peercount=0 tried=160 static=0
+WARN [05-10|23:14:49.625] Snapshot extension registration failed   peer=5656f476 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:49.648] Snapshot extension registration failed   peer=0851eb35 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:49.666] Snapshot extension registration failed   peer=6b8bcab2 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:50.976] Snapshot extension registration failed   peer=641e6d2a err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:50.980] Snapshot extension registration failed   peer=b46167ca err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:51.009] Snapshot extension registration failed   peer=52c95cf4 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:52.142] Snapshot extension registration failed   peer=543fc2b7 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:52.144] Snapshot extension registration failed   peer=6fc92db9 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:52.146] Snapshot extension registration failed   peer=c7cc44ed err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:52.170] Snapshot extension registration failed   peer=5775dd29 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:52.342] Snapshot extension registration failed   peer=709e60bc err="peer connected on snap without compatible eth support"
+WARN [05-10|23:14:53.663] Snapshot extension registration failed   peer=70c78130 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:14:58.095] Looking for peers                        peercount=0 tried=149 static=0
+WARN [05-10|23:15:01.905] Snapshot extension registration failed   peer=93a49c92 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:15:08.143] Looking for peers                        peercount=0 tried=62  static=0
+WARN [05-10|23:15:13.094] Snapshot extension registration failed   peer=e654fbdb err="peer connected on snap without compatible eth support"
+WARN [05-10|23:15:13.274] Snapshot extension registration failed   peer=0e09ffea err="peer connected on snap without compatible eth support"
+WARN [05-10|23:15:13.327] Snapshot extension registration failed   peer=6a69dafe err="peer connected on snap without compatible eth support"
+WARN [05-10|23:15:13.348] Snapshot extension registration failed   peer=7e08332a err="peer connected on snap without compatible eth support"
+WARN [05-10|23:15:14.556] Snapshot extension registration failed   peer=8e834e3f err="peer connected on snap without compatible eth support"
+WARN [05-10|23:15:14.675] Snapshot extension registration failed   peer=4e8c9fe7 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:15:15.684] Snapshot extension registration failed   peer=622c6180 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:15:16.979] Snapshot extension registration failed   peer=14df9101 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:15:18.278] Looking for peers                        peercount=0 tried=123 static=0
+WARN [05-10|23:15:18.476] Snapshot extension registration failed   peer=6a23bda0 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:15:18.712] Caller gas above allowance, capping      requested=3,983,703,509 cap=50,000,000
+INFO [05-10|23:15:18.721] Setting new local account                address=0xfe091A45072EA39434A86EF27bF23E1145E0cda8
+INFO [05-10|23:15:18.722] Submitted transaction                    hash=0xfe958abb0ebacde59a29b5cade09b16e1451ae510968336a39b3d65104d3ba1d from=0xfe091A45072EA39434A86EF27bF23E1145E0cda8 nonce=0 recipient=0xD5DBdc31AF970Cf13BFb025475d87D02a3bB5f12 value=0
+WARN [05-10|23:15:25.227] Snapshot extension registration failed   peer=6823e61c err="peer connected on snap without compatible eth support"
+INFO [05-10|23:15:28.431] Looking for peers                        peercount=0 tried=135 static=0
+WARN [05-10|23:15:34.271] Snapshot extension registration failed   peer=271a89af err="peer connected on snap without compatible eth support"
+WARN [05-10|23:15:34.296] Snapshot extension registration failed   peer=6fc9a68f err="peer connected on snap without compatible eth support"
+INFO [05-10|23:15:36.909] Updated mining threads                   threads=1
+INFO [05-10|23:15:36.910] Transaction pool price threshold updated price=1,000,000,000
+INFO [05-10|23:15:36.910] Commit new sealing work                  number=77 sealhash=49ce9e..8e9c38 uncles=0 txs=0 gas=0 fees=0 elapsed="514.911µs"
+INFO [05-10|23:15:36.911] Commit new sealing work                  number=77 sealhash=11cfa0..74fc0d uncles=0 txs=1 gas=51201 fees=5.1201e-05 elapsed=1.035ms
+INFO [05-10|23:15:38.452] Looking for peers                        peercount=0 tried=100 static=0
+WARN [05-10|23:15:41.815] Snapshot extension registration failed   peer=ca6e1c50 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:15:41.842] Successfully sealed new block            number=77 sealhash=11cfa0..74fc0d hash=75f1ab..b45dda elapsed=4.931s
+INFO [05-10|23:15:41.842] 🔨 mined potential block                  number=77 hash=75f1ab..b45dda
+INFO [05-10|23:15:41.842] Commit new sealing work                  number=78 sealhash=436c00..3e1c51 uncles=0 txs=0 gas=0     fees=0          elapsed="113.424µs"
+INFO [05-10|23:15:41.843] Commit new sealing work                  number=78 sealhash=436c00..3e1c51 uncles=0 txs=0 gas=0     fees=0          elapsed="394.196µs"
+WARN [05-10|23:15:42.106] Snapshot extension registration failed   peer=93a49c92 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:15:43.112] Successfully sealed new block            number=78 sealhash=436c00..3e1c51 hash=e01c0a..a726bb elapsed=1.269s
+INFO [05-10|23:15:43.112] 🔨 mined potential block                  number=78 hash=e01c0a..a726bb
+INFO [05-10|23:15:43.112] Commit new sealing work                  number=79 sealhash=f65b4d..8c6c49 uncles=0 txs=0 gas=0     fees=0          elapsed="89.671µs"
+INFO [05-10|23:15:43.112] Commit new sealing work                  number=79 sealhash=f65b4d..8c6c49 uncles=0 txs=0 gas=0     fees=0          elapsed="170.826µs"
+WARN [05-10|23:15:44.072] Snapshot extension registration failed   peer=c13b2350 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:15:44.618] Successfully sealed new block            number=79 sealhash=f65b4d..8c6c49 hash=8f4a93..15a5e1 elapsed=1.506s
+INFO [05-10|23:15:44.619] 🔨 mined potential block                  number=79 hash=8f4a93..15a5e1
+INFO [05-10|23:15:44.621] Commit new sealing work                  number=80 sealhash=8b1d05..085240 uncles=0 txs=0 gas=0     fees=0          elapsed=2.054ms
+INFO [05-10|23:15:44.621] Commit new sealing work                  number=80 sealhash=8b1d05..085240 uncles=0 txs=0 gas=0     fees=0          elapsed=2.157ms
+INFO [05-10|23:15:44.964] Successfully sealed new block            number=80 sealhash=8b1d05..085240 hash=2c507e..8b13c8 elapsed=344.700ms
+INFO [05-10|23:15:44.964] 🔨 mined potential block                  number=80 hash=2c507e..8b13c8
+INFO [05-10|23:15:44.964] Commit new sealing work                  number=81 sealhash=b2ec46..e686dc uncles=0 txs=0 gas=0     fees=0          elapsed="108.627µs"
+INFO [05-10|23:15:44.964] Commit new sealing work                  number=81 sealhash=b2ec46..e686dc uncles=0 txs=0 gas=0     fees=0          elapsed="225.016µs"
+INFO [05-10|23:15:46.771] Successfully sealed new block            number=81 sealhash=b2ec46..e686dc hash=2c7b40..a37128 elapsed=1.807s
+INFO [05-10|23:15:46.771] 🔨 mined potential block                  number=81 hash=2c7b40..a37128
+INFO [05-10|23:15:46.778] Commit new sealing work                  number=82 sealhash=7d5cf7..0c58a6 uncles=0 txs=0 gas=0     fees=0          elapsed=6.433ms
+INFO [05-10|23:15:46.778] Commit new sealing work                  number=82 sealhash=7d5cf7..0c58a6 uncles=0 txs=0 gas=0     fees=0          elapsed=6.618ms
+INFO [05-10|23:15:47.825] Successfully sealed new block            number=82 sealhash=7d5cf7..0c58a6 hash=0962ca..73fa03 elapsed=1.054s
+INFO [05-10|23:15:47.827] 🔨 mined potential block                  number=82 hash=0962ca..73fa03
+INFO [05-10|23:15:47.826] Commit new sealing work                  number=83 sealhash=bedce9..fee42e uncles=0 txs=0 gas=0     fees=0          elapsed="127.84µs"
+INFO [05-10|23:15:47.827] Commit new sealing work                  number=83 sealhash=bedce9..fee42e uncles=0 txs=0 gas=0     fees=0          elapsed=1.679ms
+INFO [05-10|23:15:48.460] Looking for peers                        peercount=1 tried=169 static=0
+WARN [05-10|23:15:48.746] Snapshot extension registration failed   peer=e95fa0f6 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:15:50.740] Snapshot extension registration failed   peer=e955655c err="peer connected on snap without compatible eth support"
+INFO [05-10|23:15:52.550] Successfully sealed new block            number=83 sealhash=bedce9..fee42e hash=cd046b..43c3df elapsed=4.724s
+INFO [05-10|23:15:52.550] 🔨 mined potential block                  number=83 hash=cd046b..43c3df
+INFO [05-10|23:15:52.550] Commit new sealing work                  number=84 sealhash=64c9cb..5cd028 uncles=0 txs=0 gas=0     fees=0          elapsed="88.498µs"
+INFO [05-10|23:15:52.550] Commit new sealing work                  number=84 sealhash=64c9cb..5cd028 uncles=0 txs=0 gas=0     fees=0          elapsed="178.382µs"
+INFO [05-10|23:15:56.508] Successfully sealed new block            number=84 sealhash=64c9cb..5cd028 hash=99cc2a..f63ee6 elapsed=3.957s
+INFO [05-10|23:15:56.508] 🔗 block reached canonical chain          number=77 hash=75f1ab..b45dda
+INFO [05-10|23:15:56.508] 🔨 mined potential block                  number=84 hash=99cc2a..f63ee6
+INFO [05-10|23:15:56.508] Commit new sealing work                  number=85 sealhash=075830..43921f uncles=0 txs=0 gas=0     fees=0          elapsed="129.977µs"
+INFO [05-10|23:15:56.508] Commit new sealing work                  number=85 sealhash=075830..43921f uncles=0 txs=0 gas=0     fees=0          elapsed="333.837µs"
+INFO [05-10|23:15:57.094] Successfully sealed new block            number=85 sealhash=075830..43921f hash=f00c40..ff9a9c elapsed=586.167ms
+INFO [05-10|23:15:57.094] 🔗 block reached canonical chain          number=78 hash=e01c0a..a726bb
+INFO [05-10|23:15:57.094] 🔨 mined potential block                  number=85 hash=f00c40..ff9a9c
+INFO [05-10|23:15:57.094] Commit new sealing work                  number=86 sealhash=075030..eebdb7 uncles=0 txs=0 gas=0     fees=0          elapsed="112.063µs"
+INFO [05-10|23:15:57.095] Commit new sealing work                  number=86 sealhash=075030..eebdb7 uncles=0 txs=0 gas=0     fees=0          elapsed="195.536µs"
+INFO [05-10|23:15:58.516] Looking for peers                        peercount=0 tried=58  static=0
+INFO [05-10|23:15:58.561] Successfully sealed new block            number=86 sealhash=075030..eebdb7 hash=d8a347..9d76e6 elapsed=1.466s
+INFO [05-10|23:15:58.561] 🔗 block reached canonical chain          number=79 hash=8f4a93..15a5e1
+INFO [05-10|23:15:58.561] 🔨 mined potential block                  number=86 hash=d8a347..9d76e6
+INFO [05-10|23:15:58.561] Commit new sealing work                  number=87 sealhash=80ef19..86d125 uncles=0 txs=0 gas=0     fees=0          elapsed="118.961µs"
+INFO [05-10|23:15:58.561] Commit new sealing work                  number=87 sealhash=80ef19..86d125 uncles=0 txs=0 gas=0     fees=0          elapsed="264.759µs"
+INFO [05-10|23:16:06.053] Successfully sealed new block            number=87 sealhash=80ef19..86d125 hash=133083..39840f elapsed=7.492s
+INFO [05-10|23:16:06.054] 🔗 block reached canonical chain          number=80 hash=2c507e..8b13c8
+INFO [05-10|23:16:06.054] 🔨 mined potential block                  number=87 hash=133083..39840f
+INFO [05-10|23:16:06.054] Commit new sealing work                  number=88 sealhash=4646d7..fca436 uncles=0 txs=0 gas=0     fees=0          elapsed="213.459µs"
+INFO [05-10|23:16:06.054] Commit new sealing work                  number=88 sealhash=4646d7..fca436 uncles=0 txs=0 gas=0     fees=0          elapsed="340.136µs"
+INFO [05-10|23:16:06.099] Successfully sealed new block            number=88 sealhash=4646d7..fca436 hash=80cc85..9f8f45 elapsed=45.221ms
+INFO [05-10|23:16:06.099] 🔗 block reached canonical chain          number=81 hash=2c7b40..a37128
+INFO [05-10|23:16:06.099] 🔨 mined potential block                  number=88 hash=80cc85..9f8f45
+INFO [05-10|23:16:06.099] Commit new sealing work                  number=89 sealhash=6ea270..a614c5 uncles=0 txs=0 gas=0     fees=0          elapsed="154.536µs"
+INFO [05-10|23:16:06.099] Commit new sealing work                  number=89 sealhash=6ea270..a614c5 uncles=0 txs=0 gas=0     fees=0          elapsed="261.324µs"
+INFO [05-10|23:16:07.059] Successfully sealed new block            number=89 sealhash=6ea270..a614c5 hash=6427e0..7d6411 elapsed=959.568ms
+INFO [05-10|23:16:07.059] 🔗 block reached canonical chain          number=82 hash=0962ca..73fa03
+INFO [05-10|23:16:07.059] 🔨 mined potential block                  number=89 hash=6427e0..7d6411
+INFO [05-10|23:16:07.059] Commit new sealing work                  number=90 sealhash=265308..39978b uncles=0 txs=0 gas=0     fees=0          elapsed="126.836µs"
+INFO [05-10|23:16:07.059] Commit new sealing work                  number=90 sealhash=265308..39978b uncles=0 txs=0 gas=0     fees=0          elapsed="241.487µs"
+INFO [05-10|23:16:07.124] Successfully sealed new block            number=90 sealhash=265308..39978b hash=7af7a2..0abaa3 elapsed=65.403ms
+INFO [05-10|23:16:07.125] 🔗 block reached canonical chain          number=83 hash=cd046b..43c3df
+INFO [05-10|23:16:07.125] 🔨 mined potential block                  number=90 hash=7af7a2..0abaa3
+INFO [05-10|23:16:07.125] Commit new sealing work                  number=91 sealhash=d576ac..3bae15 uncles=0 txs=0 gas=0     fees=0          elapsed="144.564µs"
+INFO [05-10|23:16:07.125] Commit new sealing work                  number=91 sealhash=d576ac..3bae15 uncles=0 txs=0 gas=0     fees=0          elapsed="251.257µs"
+INFO [05-10|23:16:08.559] Looking for peers                        peercount=1 tried=172 static=0
+INFO [05-10|23:16:12.275] Successfully sealed new block            number=91 sealhash=d576ac..3bae15 hash=9726bf..51a3fe elapsed=5.149s
+INFO [05-10|23:16:12.275] 🔗 block reached canonical chain          number=84 hash=99cc2a..f63ee6
+INFO [05-10|23:16:12.275] 🔨 mined potential block                  number=91 hash=9726bf..51a3fe
+INFO [05-10|23:16:12.275] Commit new sealing work                  number=92 sealhash=b26210..dacb35 uncles=0 txs=0 gas=0     fees=0          elapsed="122.448µs"
+INFO [05-10|23:16:12.275] Commit new sealing work                  number=92 sealhash=b26210..dacb35 uncles=0 txs=0 gas=0     fees=0          elapsed="367.48µs"
+INFO [05-10|23:16:13.286] Successfully sealed new block            number=92 sealhash=b26210..dacb35 hash=06d2a0..88b47b elapsed=1.011s
+INFO [05-10|23:16:13.286] 🔗 block reached canonical chain          number=85 hash=f00c40..ff9a9c
+INFO [05-10|23:16:13.286] 🔨 mined potential block                  number=92 hash=06d2a0..88b47b
+INFO [05-10|23:16:13.286] Commit new sealing work                  number=93 sealhash=f22489..054881 uncles=0 txs=0 gas=0     fees=0          elapsed="127.322µs"
+INFO [05-10|23:16:13.286] Commit new sealing work                  number=93 sealhash=f22489..054881 uncles=0 txs=0 gas=0     fees=0          elapsed="222.847µs"
+INFO [05-10|23:16:15.024] Successfully sealed new block            number=93 sealhash=f22489..054881 hash=59c1cb..8310b4 elapsed=1.737s
+INFO [05-10|23:16:15.024] 🔗 block reached canonical chain          number=86 hash=d8a347..9d76e6
+INFO [05-10|23:16:15.033] Commit new sealing work                  number=94 sealhash=123bb4..3449d3 uncles=0 txs=0 gas=0     fees=0          elapsed=9.112ms
+INFO [05-10|23:16:15.033] Commit new sealing work                  number=94 sealhash=123bb4..3449d3 uncles=0 txs=0 gas=0     fees=0          elapsed=9.214ms
+INFO [05-10|23:16:15.033] 🔨 mined potential block                  number=93 hash=59c1cb..8310b4
+INFO [05-10|23:16:15.415] Successfully sealed new block            number=94 sealhash=123bb4..3449d3 hash=ad9759..7e3643 elapsed=390.923ms
+INFO [05-10|23:16:15.423] 🔗 block reached canonical chain          number=87 hash=133083..39840f
+INFO [05-10|23:16:15.423] 🔨 mined potential block                  number=94 hash=ad9759..7e3643
+INFO [05-10|23:16:15.423] Commit new sealing work                  number=95 sealhash=dfcf35..6af72f uncles=0 txs=0 gas=0     fees=0          elapsed=8.204ms
+INFO [05-10|23:16:15.423] Commit new sealing work                  number=95 sealhash=dfcf35..6af72f uncles=0 txs=0 gas=0     fees=0          elapsed=8.358ms
+INFO [05-10|23:16:16.231] Successfully sealed new block            number=95 sealhash=dfcf35..6af72f hash=b8258e..d4d2d1 elapsed=816.002ms
+INFO [05-10|23:16:16.231] 🔗 block reached canonical chain          number=88 hash=80cc85..9f8f45
+INFO [05-10|23:16:16.238] Commit new sealing work                  number=96 sealhash=9be9fd..bbbfc2 uncles=0 txs=0 gas=0     fees=0          elapsed=7.168ms
+INFO [05-10|23:16:16.238] Commit new sealing work                  number=96 sealhash=9be9fd..bbbfc2 uncles=0 txs=0 gas=0     fees=0          elapsed=7.252ms
+INFO [05-10|23:16:16.238] 🔨 mined potential block                  number=95 hash=b8258e..d4d2d1
+INFO [05-10|23:16:18.573] Looking for peers                        peercount=0 tried=141 static=0
+INFO [05-10|23:16:19.848] Successfully sealed new block            number=96 sealhash=9be9fd..bbbfc2 hash=a6a505..969d31 elapsed=3.616s
+INFO [05-10|23:16:19.848] 🔗 block reached canonical chain          number=89 hash=6427e0..7d6411
+INFO [05-10|23:16:19.848] 🔨 mined potential block                  number=96 hash=a6a505..969d31
+INFO [05-10|23:16:19.848] Commit new sealing work                  number=97 sealhash=4a24bb..23aab0 uncles=0 txs=0 gas=0     fees=0          elapsed="102.597µs"
+INFO [05-10|23:16:19.848] Commit new sealing work                  number=97 sealhash=4a24bb..23aab0 uncles=0 txs=0 gas=0     fees=0          elapsed="193.85µs"
+INFO [05-10|23:16:20.420] Successfully sealed new block            number=97 sealhash=4a24bb..23aab0 hash=b3bbb1..def400 elapsed=571.700ms
+INFO [05-10|23:16:20.420] 🔗 block reached canonical chain          number=90 hash=7af7a2..0abaa3
+INFO [05-10|23:16:20.428] Commit new sealing work                  number=98 sealhash=daccdd..ded93c uncles=0 txs=0 gas=0     fees=0          elapsed=7.410ms
+INFO [05-10|23:16:20.428] Commit new sealing work                  number=98 sealhash=daccdd..ded93c uncles=0 txs=0 gas=0     fees=0          elapsed=7.518ms
+INFO [05-10|23:16:20.428] 🔨 mined potential block                  number=97 hash=b3bbb1..def400
+WARN [05-10|23:16:21.971] Snapshot extension registration failed   peer=bfbace88 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:22.260] Snapshot extension registration failed   peer=93a49c92 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:23.148] Snapshot extension registration failed   peer=8bd7bd9c err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:23.159] Snapshot extension registration failed   peer=6823e61c err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:23.182] Snapshot extension registration failed   peer=6b4e6eaf err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:23.184] Snapshot extension registration failed   peer=690ba895 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:23.189] Snapshot extension registration failed   peer=6808cf8f err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:23.207] Snapshot extension registration failed   peer=606c76c3 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:23.218] Snapshot extension registration failed   peer=6da7a76b err="peer connected on snap without compatible eth support"
+INFO [05-10|23:16:23.352] Successfully sealed new block            number=98 sealhash=daccdd..ded93c hash=a2825e..ae92b9 elapsed=2.931s
+INFO [05-10|23:16:23.352] 🔗 block reached canonical chain          number=91 hash=9726bf..51a3fe
+INFO [05-10|23:16:23.359] Commit new sealing work                  number=99 sealhash=74e560..e25771 uncles=0 txs=0 gas=0     fees=0          elapsed=7.016ms
+INFO [05-10|23:16:23.359] Commit new sealing work                  number=99 sealhash=74e560..e25771 uncles=0 txs=0 gas=0     fees=0          elapsed=7.126ms
+INFO [05-10|23:16:23.359] 🔨 mined potential block                  number=98 hash=a2825e..ae92b9
+WARN [05-10|23:16:24.283] Snapshot extension registration failed   peer=f1323200 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:24.295] Snapshot extension registration failed   peer=44ed031f err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:24.473] Snapshot extension registration failed   peer=6938e372 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:16:24.810] Successfully sealed new block            number=99 sealhash=74e560..e25771 hash=fbebc8..10be37 elapsed=1.457s
+INFO [05-10|23:16:24.810] 🔗 block reached canonical chain          number=92 hash=06d2a0..88b47b
+INFO [05-10|23:16:24.810] 🔨 mined potential block                  number=99 hash=fbebc8..10be37
+INFO [05-10|23:16:24.810] Commit new sealing work                  number=100 sealhash=6d023c..a5c4a8 uncles=0 txs=0 gas=0     fees=0          elapsed="109.436µs"
+INFO [05-10|23:16:24.811] Commit new sealing work                  number=100 sealhash=6d023c..a5c4a8 uncles=0 txs=0 gas=0     fees=0          elapsed="398.096µs"
+INFO [05-10|23:16:27.068] Successfully sealed new block            number=100 sealhash=6d023c..a5c4a8 hash=74e20d..82ad4f elapsed=2.257s
+INFO [05-10|23:16:27.068] 🔗 block reached canonical chain          number=93  hash=59c1cb..8310b4
+INFO [05-10|23:16:27.068] 🔨 mined potential block                  number=100 hash=74e20d..82ad4f
+INFO [05-10|23:16:27.068] Commit new sealing work                  number=101 sealhash=857d63..166e3c uncles=0 txs=0 gas=0     fees=0          elapsed="120.032µs"
+INFO [05-10|23:16:27.068] Commit new sealing work                  number=101 sealhash=857d63..166e3c uncles=0 txs=0 gas=0     fees=0          elapsed="223.6µs"
+INFO [05-10|23:16:28.649] Looking for peers                        peercount=0 tried=152 static=0
+WARN [05-10|23:16:31.150] Snapshot extension registration failed   peer=6cb30f0b err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:31.282] Snapshot extension registration failed   peer=6a69dafe err="peer connected on snap without compatible eth support"
+INFO [05-10|23:16:32.993] Successfully sealed new block            number=101 sealhash=857d63..166e3c hash=f18911..218132 elapsed=5.924s
+INFO [05-10|23:16:32.993] 🔗 block reached canonical chain          number=94  hash=ad9759..7e3643
+INFO [05-10|23:16:32.993] 🔨 mined potential block                  number=101 hash=f18911..218132
+INFO [05-10|23:16:32.993] Commit new sealing work                  number=102 sealhash=933954..eced99 uncles=0 txs=0 gas=0     fees=0          elapsed="149.932µs"
+INFO [05-10|23:16:32.993] Commit new sealing work                  number=102 sealhash=933954..eced99 uncles=0 txs=0 gas=0     fees=0          elapsed="261.999µs"
+INFO [05-10|23:16:33.149] Successfully sealed new block            number=102 sealhash=933954..eced99 hash=fcc22f..6b23af elapsed=155.725ms
+INFO [05-10|23:16:33.149] 🔗 block reached canonical chain          number=95  hash=b8258e..d4d2d1
+INFO [05-10|23:16:33.149] 🔨 mined potential block                  number=102 hash=fcc22f..6b23af
+INFO [05-10|23:16:33.149] Commit new sealing work                  number=103 sealhash=12ec65..eb063f uncles=0 txs=0 gas=0     fees=0          elapsed="136.393µs"
+INFO [05-10|23:16:33.149] Commit new sealing work                  number=103 sealhash=12ec65..eb063f uncles=0 txs=0 gas=0     fees=0          elapsed="225.575µs"
+INFO [05-10|23:16:38.673] Looking for peers                        peercount=0 tried=97  static=0
+WARN [05-10|23:16:40.030] Snapshot extension registration failed   peer=3162f02d err="peer connected on snap without compatible eth support"
+INFO [05-10|23:16:40.185] Successfully sealed new block            number=103 sealhash=12ec65..eb063f hash=9919f1..cc4d0b elapsed=7.035s
+INFO [05-10|23:16:40.185] 🔗 block reached canonical chain          number=96  hash=a6a505..969d31
+INFO [05-10|23:16:40.185] 🔨 mined potential block                  number=103 hash=9919f1..cc4d0b
+INFO [05-10|23:16:40.185] Commit new sealing work                  number=104 sealhash=0a03b7..8f148e uncles=0 txs=0 gas=0     fees=0          elapsed="140.962µs"
+INFO [05-10|23:16:40.185] Commit new sealing work                  number=104 sealhash=0a03b7..8f148e uncles=0 txs=0 gas=0     fees=0          elapsed="259.276µs"
+INFO [05-10|23:16:45.679] Successfully sealed new block            number=104 sealhash=0a03b7..8f148e hash=89b711..b49e0a elapsed=5.494s
+INFO [05-10|23:16:45.679] 🔗 block reached canonical chain          number=97  hash=b3bbb1..def400
+INFO [05-10|23:16:45.679] 🔨 mined potential block                  number=104 hash=89b711..b49e0a
+INFO [05-10|23:16:45.679] Commit new sealing work                  number=105 sealhash=a4ba4c..af4713 uncles=0 txs=0 gas=0     fees=0          elapsed="141.766µs"
+INFO [05-10|23:16:45.680] Commit new sealing work                  number=105 sealhash=a4ba4c..af4713 uncles=0 txs=0 gas=0     fees=0          elapsed="252.05µs"
+INFO [05-10|23:16:47.016] Successfully sealed new block            number=105 sealhash=a4ba4c..af4713 hash=ca80a1..d2165e elapsed=1.336s
+INFO [05-10|23:16:47.016] 🔗 block reached canonical chain          number=98  hash=a2825e..ae92b9
+INFO [05-10|23:16:47.016] 🔨 mined potential block                  number=105 hash=ca80a1..d2165e
+INFO [05-10|23:16:47.016] Commit new sealing work                  number=106 sealhash=d87dc4..13073e uncles=0 txs=0 gas=0     fees=0          elapsed="156.191µs"
+INFO [05-10|23:16:47.016] Commit new sealing work                  number=106 sealhash=d87dc4..13073e uncles=0 txs=0 gas=0     fees=0          elapsed="283.036µs"
+INFO [05-10|23:16:48.759] Looking for peers                        peercount=0 tried=122 static=0
+WARN [05-10|23:16:55.119] Caller gas above allowance, capping      requested=3,872,412,808 cap=50,000,000
+INFO [05-10|23:16:55.127] Submitted transaction                    hash=0xc4ffe47aa18fb71376477eab45d014244ea260d5d780343435f7c02ff16f9c88 from=0xfe091A45072EA39434A86EF27bF23E1145E0cda8 nonce=1 recipient=0xD5DBdc31AF970Cf13BFb025475d87D02a3bB5f12 value=0
+INFO [05-10|23:16:56.034] Commit new sealing work                  number=106 sealhash=e36fe6..1ffb19 uncles=0 txs=1 gas=36201 fees=3.6201e-05 elapsed="330.062µs"
+WARN [05-10|23:16:57.786] Snapshot extension registration failed   peer=ed9ea4bd err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:57.929] Snapshot extension registration failed   peer=ed8a324b err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:57.968] Snapshot extension registration failed   peer=edac48bc err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:58.235] Snapshot extension registration failed   peer=74a4b230 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:58.713] Snapshot extension registration failed   peer=1ad502d1 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:16:58.880] Looking for peers                        peercount=0 tried=162 static=0
+WARN [05-10|23:16:59.001] Snapshot extension registration failed   peer=7345d9c8 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:59.136] Snapshot extension registration failed   peer=6823e61c err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:59.147] Snapshot extension registration failed   peer=64c2b636 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:59.179] Snapshot extension registration failed   peer=6808cf8f err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:59.180] Snapshot extension registration failed   peer=6fc9a68f err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:59.182] Snapshot extension registration failed   peer=683de79a err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:59.194] Snapshot extension registration failed   peer=68fc82d0 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:59.517] Snapshot extension registration failed   peer=08de1aeb err="peer connected on snap without compatible eth support"
+WARN [05-10|23:16:59.817] Snapshot extension registration failed   peer=62dd45b1 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:00.005] Snapshot extension registration failed   peer=508ded97 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:17:01.077] Successfully sealed new block            number=106 sealhash=e36fe6..1ffb19 hash=c61f4a..7589b9 elapsed=5.043s
+INFO [05-10|23:17:01.077] 🔗 block reached canonical chain          number=99  hash=fbebc8..10be37
+INFO [05-10|23:17:01.089] Commit new sealing work                  number=107 sealhash=c5f886..db28a0 uncles=0 txs=0 gas=0     fees=0          elapsed=11.658ms
+INFO [05-10|23:17:01.089] Commit new sealing work                  number=107 sealhash=c5f886..db28a0 uncles=0 txs=0 gas=0     fees=0          elapsed=11.744ms
+INFO [05-10|23:17:01.089] 🔨 mined potential block                  number=106 hash=c61f4a..7589b9
+INFO [05-10|23:17:02.957] Successfully sealed new block            number=107 sealhash=c5f886..db28a0 hash=09d0d9..c8b8c0 elapsed=1.879s
+INFO [05-10|23:17:02.957] 🔗 block reached canonical chain          number=100 hash=74e20d..82ad4f
+INFO [05-10|23:17:02.961] 🔨 mined potential block                  number=107 hash=09d0d9..c8b8c0
+INFO [05-10|23:17:02.961] Commit new sealing work                  number=108 sealhash=4419af..3d8fb7 uncles=0 txs=0 gas=0     fees=0          elapsed=3.516ms
+INFO [05-10|23:17:02.961] Commit new sealing work                  number=108 sealhash=4419af..3d8fb7 uncles=0 txs=0 gas=0     fees=0          elapsed=3.621ms
+WARN [05-10|23:17:06.045] Snapshot extension registration failed   peer=bfbace88 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:06.402] Snapshot extension registration failed   peer=93a49c92 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:17:08.068] Successfully sealed new block            number=108 sealhash=4419af..3d8fb7 hash=53fe5b..eb23d3 elapsed=5.110s
+INFO [05-10|23:17:08.068] 🔗 block reached canonical chain          number=101 hash=f18911..218132
+INFO [05-10|23:17:08.068] 🔨 mined potential block                  number=108 hash=53fe5b..eb23d3
+INFO [05-10|23:17:08.068] Commit new sealing work                  number=109 sealhash=2c7275..79b7ef uncles=0 txs=0 gas=0     fees=0          elapsed="160.127µs"
+INFO [05-10|23:17:08.069] Commit new sealing work                  number=109 sealhash=2c7275..79b7ef uncles=0 txs=0 gas=0     fees=0          elapsed="316.375µs"
+INFO [05-10|23:17:08.743] Successfully sealed new block            number=109 sealhash=2c7275..79b7ef hash=8a36a6..e01f61 elapsed=674.196ms
+INFO [05-10|23:17:08.743] 🔗 block reached canonical chain          number=102 hash=fcc22f..6b23af
+INFO [05-10|23:17:08.743] 🔨 mined potential block                  number=109 hash=8a36a6..e01f61
+INFO [05-10|23:17:08.743] Commit new sealing work                  number=110 sealhash=7aec23..c8e10a uncles=0 txs=0 gas=0     fees=0          elapsed="119.307µs"
+INFO [05-10|23:17:08.743] Commit new sealing work                  number=110 sealhash=7aec23..c8e10a uncles=0 txs=0 gas=0     fees=0          elapsed="260.223µs"
+INFO [05-10|23:17:08.880] Looking for peers                        peercount=1 tried=193 static=0
+INFO [05-10|23:17:09.390] Successfully sealed new block            number=110 sealhash=7aec23..c8e10a hash=531e71..1e35f5 elapsed=647.386ms
+INFO [05-10|23:17:09.390] 🔗 block reached canonical chain          number=103 hash=9919f1..cc4d0b
+INFO [05-10|23:17:09.397] Commit new sealing work                  number=111 sealhash=b5a463..d4658b uncles=0 txs=0 gas=0     fees=0          elapsed=6.639ms
+INFO [05-10|23:17:09.397] Commit new sealing work                  number=111 sealhash=b5a463..d4658b uncles=0 txs=0 gas=0     fees=0          elapsed=6.743ms
+INFO [05-10|23:17:09.397] 🔨 mined potential block                  number=110 hash=531e71..1e35f5
+WARN [05-10|23:17:09.492] Snapshot extension registration failed   peer=04b02c5f err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:09.497] Snapshot extension registration failed   peer=680d6fbc err="peer connected on snap without compatible eth support"
+INFO [05-10|23:17:09.654] Successfully sealed new block            number=111 sealhash=b5a463..d4658b hash=9d6161..c725ec elapsed=263.040ms
+INFO [05-10|23:17:09.654] 🔗 block reached canonical chain          number=104 hash=89b711..b49e0a
+INFO [05-10|23:17:09.665] Commit new sealing work                  number=112 sealhash=b217bc..693c5c uncles=0 txs=0 gas=0     fees=0          elapsed=11.468ms
+INFO [05-10|23:17:09.665] Commit new sealing work                  number=112 sealhash=b217bc..693c5c uncles=0 txs=0 gas=0     fees=0          elapsed=11.567ms
+INFO [05-10|23:17:09.665] 🔨 mined potential block                  number=111 hash=9d6161..c725ec
+WARN [05-10|23:17:09.711] Snapshot extension registration failed   peer=fe80e53a err="peer connected on snap without compatible eth support"
+INFO [05-10|23:17:10.114] Successfully sealed new block            number=112 sealhash=b217bc..693c5c hash=b8c003..aa33f4 elapsed=460.686ms
+INFO [05-10|23:17:10.115] 🔗 block reached canonical chain          number=105 hash=ca80a1..d2165e
+INFO [05-10|23:17:10.129] Commit new sealing work                  number=113 sealhash=b3a801..90b8dd uncles=0 txs=0 gas=0     fees=0          elapsed=14.459ms
+INFO [05-10|23:17:10.129] Commit new sealing work                  number=113 sealhash=b3a801..90b8dd uncles=0 txs=0 gas=0     fees=0          elapsed=14.596ms
+INFO [05-10|23:17:10.129] 🔨 mined potential block                  number=112 hash=b8c003..aa33f4
+WARN [05-10|23:17:11.260] Snapshot extension registration failed   peer=fe9ea03e err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:11.892] Snapshot extension registration failed   peer=fe9c9c07 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:17:14.092] Successfully sealed new block            number=113 sealhash=b3a801..90b8dd hash=d2d1f1..c7bb53 elapsed=3.977s
+INFO [05-10|23:17:14.092] 🔗 block reached canonical chain          number=106 hash=c61f4a..7589b9
+INFO [05-10|23:17:14.092] 🔨 mined potential block                  number=113 hash=d2d1f1..c7bb53
+INFO [05-10|23:17:14.092] Commit new sealing work                  number=114 sealhash=b124aa..f0a3b6 uncles=0 txs=0 gas=0     fees=0          elapsed="144.051µs"
+INFO [05-10|23:17:14.092] Commit new sealing work                  number=114 sealhash=b124aa..f0a3b6 uncles=0 txs=0 gas=0     fees=0          elapsed="254.997µs"
+INFO [05-10|23:17:18.959] Looking for peers                        peercount=0 tried=72  static=0
+INFO [05-10|23:17:19.091] Successfully sealed new block            number=114 sealhash=b124aa..f0a3b6 hash=87b125..0f1490 elapsed=4.998s
+INFO [05-10|23:17:19.091] 🔗 block reached canonical chain          number=107 hash=09d0d9..c8b8c0
+INFO [05-10|23:17:19.091] 🔨 mined potential block                  number=114 hash=87b125..0f1490
+INFO [05-10|23:17:19.091] Commit new sealing work                  number=115 sealhash=07bbb0..0e2da8 uncles=0 txs=0 gas=0     fees=0          elapsed="189.707µs"
+INFO [05-10|23:17:19.091] Commit new sealing work                  number=115 sealhash=07bbb0..0e2da8 uncles=0 txs=0 gas=0     fees=0          elapsed="305.666µs"
+INFO [05-10|23:17:19.335] Successfully sealed new block            number=115 sealhash=07bbb0..0e2da8 hash=a00412..a17904 elapsed=244.546ms
+INFO [05-10|23:17:19.335] 🔗 block reached canonical chain          number=108 hash=53fe5b..eb23d3
+INFO [05-10|23:17:19.335] 🔨 mined potential block                  number=115 hash=a00412..a17904
+INFO [05-10|23:17:19.336] Commit new sealing work                  number=116 sealhash=a6738f..1f6a51 uncles=0 txs=0 gas=0     fees=0          elapsed="111.257µs"
+INFO [05-10|23:17:19.336] Commit new sealing work                  number=116 sealhash=a6738f..1f6a51 uncles=0 txs=0 gas=0     fees=0          elapsed="205.933µs"
+INFO [05-10|23:17:20.144] Successfully sealed new block            number=116 sealhash=a6738f..1f6a51 hash=2c6809..8fc7f4 elapsed=808.617ms
+INFO [05-10|23:17:20.144] 🔗 block reached canonical chain          number=109 hash=8a36a6..e01f61
+INFO [05-10|23:17:20.153] Commit new sealing work                  number=117 sealhash=1d114c..548dcf uncles=0 txs=0 gas=0     fees=0          elapsed=8.374ms
+INFO [05-10|23:17:20.153] Commit new sealing work                  number=117 sealhash=1d114c..548dcf uncles=0 txs=0 gas=0     fees=0          elapsed=8.456ms
+INFO [05-10|23:17:20.153] 🔨 mined potential block                  number=116 hash=2c6809..8fc7f4
+INFO [05-10|23:17:20.741] Successfully sealed new block            number=117 sealhash=1d114c..548dcf hash=2cc9bd..fd3c76 elapsed=596.747ms
+INFO [05-10|23:17:20.741] 🔗 block reached canonical chain          number=110 hash=531e71..1e35f5
+INFO [05-10|23:17:20.741] 🔨 mined potential block                  number=117 hash=2cc9bd..fd3c76
+INFO [05-10|23:17:20.741] Commit new sealing work                  number=118 sealhash=92b72d..b6f787 uncles=0 txs=0 gas=0     fees=0          elapsed="145.295µs"
+INFO [05-10|23:17:20.741] Commit new sealing work                  number=118 sealhash=92b72d..b6f787 uncles=0 txs=0 gas=0     fees=0          elapsed="222.659µs"
+INFO [05-10|23:17:22.174] Successfully sealed new block            number=118 sealhash=92b72d..b6f787 hash=a534b2..a9d96a elapsed=1.433s
+INFO [05-10|23:17:22.175] 🔗 block reached canonical chain          number=111 hash=9d6161..c725ec
+INFO [05-10|23:17:22.175] 🔨 mined potential block                  number=118 hash=a534b2..a9d96a
+INFO [05-10|23:17:22.175] Commit new sealing work                  number=119 sealhash=ad677b..8e6e1a uncles=0 txs=0 gas=0     fees=0          elapsed="129.583µs"
+INFO [05-10|23:17:22.175] Commit new sealing work                  number=119 sealhash=ad677b..8e6e1a uncles=0 txs=0 gas=0     fees=0          elapsed="249.613µs"
+INFO [05-10|23:17:24.685] Successfully sealed new block            number=119 sealhash=ad677b..8e6e1a hash=258bce..6772e2 elapsed=2.510s
+INFO [05-10|23:17:24.685] 🔗 block reached canonical chain          number=112 hash=b8c003..aa33f4
+INFO [05-10|23:17:24.693] Commit new sealing work                  number=120 sealhash=9f4d5e..71b3f9 uncles=0 txs=0 gas=0     fees=0          elapsed=7.785ms
+INFO [05-10|23:17:24.693] Commit new sealing work                  number=120 sealhash=9f4d5e..71b3f9 uncles=0 txs=0 gas=0     fees=0          elapsed=7.864ms
+INFO [05-10|23:17:24.693] 🔨 mined potential block                  number=119 hash=258bce..6772e2
+INFO [05-10|23:17:26.736] Successfully sealed new block            number=120 sealhash=9f4d5e..71b3f9 hash=33c00c..86ed97 elapsed=2.050s
+INFO [05-10|23:17:26.736] 🔗 block reached canonical chain          number=113 hash=d2d1f1..c7bb53
+INFO [05-10|23:17:26.736] 🔨 mined potential block                  number=120 hash=33c00c..86ed97
+INFO [05-10|23:17:26.736] Commit new sealing work                  number=121 sealhash=1c8fbc..74bdbd uncles=0 txs=0 gas=0     fees=0          elapsed="132.886µs"
+INFO [05-10|23:17:26.736] Commit new sealing work                  number=121 sealhash=1c8fbc..74bdbd uncles=0 txs=0 gas=0     fees=0          elapsed="246.357µs"
+INFO [05-10|23:17:27.036] Successfully sealed new block            number=121 sealhash=1c8fbc..74bdbd hash=8ebade..ae5fb8 elapsed=299.922ms
+INFO [05-10|23:17:27.036] 🔗 block reached canonical chain          number=114 hash=87b125..0f1490
+INFO [05-10|23:17:27.045] Commit new sealing work                  number=122 sealhash=2c8722..d38f31 uncles=0 txs=0 gas=0     fees=0          elapsed=8.854ms
+INFO [05-10|23:17:27.045] Commit new sealing work                  number=122 sealhash=2c8722..d38f31 uncles=0 txs=0 gas=0     fees=0          elapsed=8.972ms
+INFO [05-10|23:17:27.045] 🔨 mined potential block                  number=121 hash=8ebade..ae5fb8
+WARN [05-10|23:17:27.121] Snapshot extension registration failed   peer=d07de5dc err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:28.609] Snapshot extension registration failed   peer=6cb30f0b err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:28.781] Snapshot extension registration failed   peer=e846d31a err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:28.795] Snapshot extension registration failed   peer=66f61119 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:17:29.143] Looking for peers                        peercount=0 tried=163 static=0
+WARN [05-10|23:17:29.225] Snapshot extension registration failed   peer=7676ecb5 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:29.237] Snapshot extension registration failed   peer=bd7e4884 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:29.267] Snapshot extension registration failed   peer=3eb88160 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:17:33.140] Successfully sealed new block            number=122 sealhash=2c8722..d38f31 hash=641874..4dfd88 elapsed=6.103s
+INFO [05-10|23:17:33.140] 🔗 block reached canonical chain          number=115 hash=a00412..a17904
+INFO [05-10|23:17:33.140] 🔨 mined potential block                  number=122 hash=641874..4dfd88
+INFO [05-10|23:17:33.140] Commit new sealing work                  number=123 sealhash=9b89f2..198a83 uncles=0 txs=0 gas=0     fees=0          elapsed="99.516µs"
+INFO [05-10|23:17:33.140] Commit new sealing work                  number=123 sealhash=9b89f2..198a83 uncles=0 txs=0 gas=0     fees=0          elapsed="195.135µs"
+WARN [05-10|23:17:34.673] Snapshot extension registration failed   peer=cb918508 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:17:34.835] Successfully sealed new block            number=123 sealhash=9b89f2..198a83 hash=b77dfd..995310 elapsed=1.694s
+INFO [05-10|23:17:34.835] 🔗 block reached canonical chain          number=116 hash=2c6809..8fc7f4
+INFO [05-10|23:17:34.835] 🔨 mined potential block                  number=123 hash=b77dfd..995310
+INFO [05-10|23:17:34.835] Commit new sealing work                  number=124 sealhash=664f55..673b62 uncles=0 txs=0 gas=0     fees=0          elapsed="128.112µs"
+INFO [05-10|23:17:34.835] Commit new sealing work                  number=124 sealhash=664f55..673b62 uncles=0 txs=0 gas=0     fees=0          elapsed="224.007µs"
+INFO [05-10|23:17:34.901] Successfully sealed new block            number=124 sealhash=664f55..673b62 hash=c0f3b9..4cac39 elapsed=66.164ms
+INFO [05-10|23:17:34.901] 🔗 block reached canonical chain          number=117 hash=2cc9bd..fd3c76
+INFO [05-10|23:17:34.901] 🔨 mined potential block                  number=124 hash=c0f3b9..4cac39
+INFO [05-10|23:17:34.902] Commit new sealing work                  number=125 sealhash=539dbe..363f78 uncles=0 txs=0 gas=0     fees=0          elapsed="124.824µs"
+INFO [05-10|23:17:34.902] Commit new sealing work                  number=125 sealhash=539dbe..363f78 uncles=0 txs=0 gas=0     fees=0          elapsed="216.713µs"
+WARN [05-10|23:17:34.973] Snapshot extension registration failed   peer=62dd45b1 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:35.167] Snapshot extension registration failed   peer=6cf833a0 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:17:36.806] Successfully sealed new block            number=125 sealhash=539dbe..363f78 hash=225904..149073 elapsed=1.904s
+INFO [05-10|23:17:36.806] 🔗 block reached canonical chain          number=118 hash=a534b2..a9d96a
+INFO [05-10|23:17:36.806] 🔨 mined potential block                  number=125 hash=225904..149073
+INFO [05-10|23:17:36.806] Commit new sealing work                  number=126 sealhash=6cd60e..ca8fba uncles=0 txs=0 gas=0     fees=0          elapsed="109.368µs"
+INFO [05-10|23:17:36.806] Commit new sealing work                  number=126 sealhash=6cd60e..ca8fba uncles=0 txs=0 gas=0     fees=0          elapsed="213.586µs"
+INFO [05-10|23:17:38.887] Successfully sealed new block            number=126 sealhash=6cd60e..ca8fba hash=8f7f43..8a3be0 elapsed=2.080s
+INFO [05-10|23:17:38.887] 🔗 block reached canonical chain          number=119 hash=258bce..6772e2
+INFO [05-10|23:17:38.887] 🔨 mined potential block                  number=126 hash=8f7f43..8a3be0
+INFO [05-10|23:17:38.887] Commit new sealing work                  number=127 sealhash=a0fbb4..76d224 uncles=0 txs=0 gas=0     fees=0          elapsed="102.836µs"
+INFO [05-10|23:17:38.887] Commit new sealing work                  number=127 sealhash=a0fbb4..76d224 uncles=0 txs=0 gas=0     fees=0          elapsed="242.923µs"
+INFO [05-10|23:17:39.154] Looking for peers                        peercount=1 tried=228 static=0
+WARN [05-10|23:17:40.621] Caller gas above allowance, capping      requested=3,793,768,883 cap=50,000,000
+INFO [05-10|23:17:40.628] Submitted transaction                    hash=0x6762c458f6e05b5d2706acf21b2da7f9820e8bff56d008aabf98115a3745393f from=0xfe091A45072EA39434A86EF27bF23E1145E0cda8 nonce=2 recipient=0xD5DBdc31AF970Cf13BFb025475d87D02a3bB5f12 value=0
+INFO [05-10|23:17:41.888] Commit new sealing work                  number=127 sealhash=88cd0c..55b9fd uncles=0 txs=1 gas=36201 fees=3.6201e-05 elapsed="472.998µs"
+INFO [05-10|23:17:44.025] Successfully sealed new block            number=127 sealhash=88cd0c..55b9fd hash=24a4b6..95cab7 elapsed=2.137s
+INFO [05-10|23:17:44.025] 🔗 block reached canonical chain          number=120 hash=33c00c..86ed97
+INFO [05-10|23:17:44.025] 🔨 mined potential block                  number=127 hash=24a4b6..95cab7
+INFO [05-10|23:17:44.025] Commit new sealing work                  number=128 sealhash=9420e5..bbbbac uncles=0 txs=0 gas=0     fees=0          elapsed="128.919µs"
+INFO [05-10|23:17:44.026] Commit new sealing work                  number=128 sealhash=9420e5..bbbbac uncles=0 txs=0 gas=0     fees=0          elapsed="252.77µs"
+INFO [05-10|23:17:46.257] Successfully sealed new block            number=128 sealhash=9420e5..bbbbac hash=e97d13..3ee411 elapsed=2.232s
+INFO [05-10|23:17:46.258] 🔗 block reached canonical chain          number=121 hash=8ebade..ae5fb8
+INFO [05-10|23:17:46.258] 🔨 mined potential block                  number=128 hash=e97d13..3ee411
+INFO [05-10|23:17:46.258] Commit new sealing work                  number=129 sealhash=8458a3..6dd2d1 uncles=0 txs=0 gas=0     fees=0          elapsed="106.319µs"
+INFO [05-10|23:17:46.258] Commit new sealing work                  number=129 sealhash=8458a3..6dd2d1 uncles=0 txs=0 gas=0     fees=0          elapsed="216.993µs"
+WARN [05-10|23:17:46.689] Snapshot extension registration failed   peer=bfbace88 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:17:46.705] Successfully sealed new block            number=129 sealhash=8458a3..6dd2d1 hash=97655f..5e09c0 elapsed=447.167ms
+INFO [05-10|23:17:46.705] 🔗 block reached canonical chain          number=122 hash=641874..4dfd88
+INFO [05-10|23:17:46.705] 🔨 mined potential block                  number=129 hash=97655f..5e09c0
+INFO [05-10|23:17:46.705] Commit new sealing work                  number=130 sealhash=583cf1..0f08bc uncles=0 txs=0 gas=0     fees=0          elapsed="172.114µs"
+INFO [05-10|23:17:46.705] Commit new sealing work                  number=130 sealhash=583cf1..0f08bc uncles=0 txs=0 gas=0     fees=0          elapsed="272.236µs"
+WARN [05-10|23:17:46.983] Snapshot extension registration failed   peer=93a49c92 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:47.470] Snapshot extension registration failed   peer=74f7648d err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:47.621] Snapshot extension registration failed   peer=1a80d6d4 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:47.645] Snapshot extension registration failed   peer=6808cf8f err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:49.152] Snapshot extension registration failed   peer=508ded97 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:17:49.162] Looking for peers                        peercount=0 tried=56  static=0
+INFO [05-10|23:17:49.804] Successfully sealed new block            number=130 sealhash=583cf1..0f08bc hash=f0c9f9..57c387 elapsed=3.099s
+INFO [05-10|23:17:49.805] 🔗 block reached canonical chain          number=123 hash=b77dfd..995310
+INFO [05-10|23:17:49.813] Commit new sealing work                  number=131 sealhash=b7eb6e..57d9f6 uncles=0 txs=0 gas=0     fees=0          elapsed=8.889ms
+INFO [05-10|23:17:49.813] Commit new sealing work                  number=131 sealhash=b7eb6e..57d9f6 uncles=0 txs=0 gas=0     fees=0          elapsed=9.015ms
+INFO [05-10|23:17:49.814] 🔨 mined potential block                  number=130 hash=f0c9f9..57c387
+INFO [05-10|23:17:49.889] Successfully sealed new block            number=131 sealhash=b7eb6e..57d9f6 hash=e54b6a..41bd2b elapsed=84.680ms
+INFO [05-10|23:17:49.889] 🔗 block reached canonical chain          number=124 hash=c0f3b9..4cac39
+INFO [05-10|23:17:49.889] 🔨 mined potential block                  number=131 hash=e54b6a..41bd2b
+INFO [05-10|23:17:49.890] Commit new sealing work                  number=132 sealhash=930d4a..5bc2e8 uncles=0 txs=0 gas=0     fees=0          elapsed="112.771µs"
+INFO [05-10|23:17:49.890] Commit new sealing work                  number=132 sealhash=930d4a..5bc2e8 uncles=0 txs=0 gas=0     fees=0          elapsed="220.888µs"
+INFO [05-10|23:17:50.495] Successfully sealed new block            number=132 sealhash=930d4a..5bc2e8 hash=1a1579..7b634b elapsed=605.303ms
+INFO [05-10|23:17:50.495] 🔗 block reached canonical chain          number=125 hash=225904..149073
+INFO [05-10|23:17:50.495] 🔨 mined potential block                  number=132 hash=1a1579..7b634b
+INFO [05-10|23:17:50.495] Commit new sealing work                  number=133 sealhash=575c78..607ffa uncles=0 txs=0 gas=0     fees=0          elapsed="143.314µs"
+INFO [05-10|23:17:50.495] Commit new sealing work                  number=133 sealhash=575c78..607ffa uncles=0 txs=0 gas=0     fees=0          elapsed="216.871µs"
+WARN [05-10|23:17:55.267] Snapshot extension registration failed   peer=570e5297 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:17:55.666] Successfully sealed new block            number=133 sealhash=575c78..607ffa hash=bbc12b..f35b89 elapsed=5.170s
+INFO [05-10|23:17:55.666] 🔗 block reached canonical chain          number=126 hash=8f7f43..8a3be0
+INFO [05-10|23:17:55.673] Commit new sealing work                  number=134 sealhash=d3a69f..98b187 uncles=0 txs=0 gas=0     fees=0          elapsed=6.865ms
+INFO [05-10|23:17:55.673] Commit new sealing work                  number=134 sealhash=d3a69f..98b187 uncles=0 txs=0 gas=0     fees=0          elapsed=6.969ms
+INFO [05-10|23:17:55.673] 🔨 mined potential block                  number=133 hash=bbc12b..f35b89
+WARN [05-10|23:17:56.063] Snapshot extension registration failed   peer=710c8d67 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:56.199] Snapshot extension registration failed   peer=2fd11fa6 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:17:56.240] Snapshot extension registration failed   peer=6b4e6eaf err="peer connected on snap without compatible eth support"
+INFO [05-10|23:17:59.579] Looking for peers                        peercount=0 tried=185 static=0
+INFO [05-10|23:18:00.639] Successfully sealed new block            number=134 sealhash=d3a69f..98b187 hash=1467a2..f8bde2 elapsed=4.972s
+INFO [05-10|23:18:00.639] 🔗 block reached canonical chain          number=127 hash=24a4b6..95cab7
+INFO [05-10|23:18:00.639] 🔨 mined potential block                  number=134 hash=1467a2..f8bde2
+INFO [05-10|23:18:00.639] Commit new sealing work                  number=135 sealhash=c06979..808a14 uncles=0 txs=0 gas=0     fees=0          elapsed="161.749µs"
+INFO [05-10|23:18:00.639] Commit new sealing work                  number=135 sealhash=c06979..808a14 uncles=0 txs=0 gas=0     fees=0          elapsed="306.696µs"
+INFO [05-10|23:18:04.040] Successfully sealed new block            number=135 sealhash=c06979..808a14 hash=feadde..649479 elapsed=3.400s
+INFO [05-10|23:18:04.040] 🔗 block reached canonical chain          number=128 hash=e97d13..3ee411
+INFO [05-10|23:18:04.049] Commit new sealing work                  number=136 sealhash=fabaa1..cc93a6 uncles=0 txs=0 gas=0     fees=0          elapsed=9.209ms
+INFO [05-10|23:18:04.049] Commit new sealing work                  number=136 sealhash=fabaa1..cc93a6 uncles=0 txs=0 gas=0     fees=0          elapsed=9.320ms
+INFO [05-10|23:18:04.049] 🔨 mined potential block                  number=135 hash=feadde..649479
+INFO [05-10|23:18:05.333] Successfully sealed new block            number=136 sealhash=fabaa1..cc93a6 hash=10223e..4cbbc4 elapsed=1.293s
+INFO [05-10|23:18:05.334] 🔗 block reached canonical chain          number=129 hash=97655f..5e09c0
+INFO [05-10|23:18:05.335] Commit new sealing work                  number=137 sealhash=e9134c..5030be uncles=0 txs=0 gas=0     fees=0          elapsed=1.403ms
+INFO [05-10|23:18:05.335] Commit new sealing work                  number=137 sealhash=e9134c..5030be uncles=0 txs=0 gas=0     fees=0          elapsed=1.510ms
+INFO [05-10|23:18:05.335] 🔨 mined potential block                  number=136 hash=10223e..4cbbc4
+INFO [05-10|23:18:07.307] Successfully sealed new block            number=137 sealhash=e9134c..5030be hash=c99a0e..2dfed5 elapsed=1.972s
+INFO [05-10|23:18:07.307] 🔗 block reached canonical chain          number=130 hash=f0c9f9..57c387
+INFO [05-10|23:18:07.307] 🔨 mined potential block                  number=137 hash=c99a0e..2dfed5
+INFO [05-10|23:18:07.307] Commit new sealing work                  number=138 sealhash=6b308c..d20e82 uncles=0 txs=0 gas=0     fees=0          elapsed="153.532µs"
+INFO [05-10|23:18:07.307] Commit new sealing work                  number=138 sealhash=6b308c..d20e82 uncles=0 txs=0 gas=0     fees=0          elapsed="248.772µs"
+INFO [05-10|23:18:09.609] Looking for peers                        peercount=0 tried=143 static=0
+INFO [05-10|23:18:11.271] Successfully sealed new block            number=138 sealhash=6b308c..d20e82 hash=5826ff..90d39d elapsed=3.964s
+INFO [05-10|23:18:11.271] 🔗 block reached canonical chain          number=131 hash=e54b6a..41bd2b
+INFO [05-10|23:18:11.281] Commit new sealing work                  number=139 sealhash=7afbc8..4b0143 uncles=0 txs=0 gas=0     fees=0          elapsed=9.835ms
+INFO [05-10|23:18:11.281] Commit new sealing work                  number=139 sealhash=7afbc8..4b0143 uncles=0 txs=0 gas=0     fees=0          elapsed=9.926ms
+INFO [05-10|23:18:11.281] 🔨 mined potential block                  number=138 hash=5826ff..90d39d
+INFO [05-10|23:18:14.456] Successfully sealed new block            number=139 sealhash=7afbc8..4b0143 hash=161a75..5e45c2 elapsed=3.184s
+INFO [05-10|23:18:14.456] 🔗 block reached canonical chain          number=132 hash=1a1579..7b634b
+INFO [05-10|23:18:14.456] 🔨 mined potential block                  number=139 hash=161a75..5e45c2
+INFO [05-10|23:18:14.456] Commit new sealing work                  number=140 sealhash=169171..76f58f uncles=0 txs=0 gas=0     fees=0          elapsed="107.037µs"
+INFO [05-10|23:18:14.457] Commit new sealing work                  number=140 sealhash=169171..76f58f uncles=0 txs=0 gas=0     fees=0          elapsed="229.344µs"
+INFO [05-10|23:18:15.191] Successfully sealed new block            number=140 sealhash=169171..76f58f hash=c97c92..550c9c elapsed=734.883ms
+INFO [05-10|23:18:15.191] 🔗 block reached canonical chain          number=133 hash=bbc12b..f35b89
+INFO [05-10|23:18:15.191] 🔨 mined potential block                  number=140 hash=c97c92..550c9c
+INFO [05-10|23:18:15.191] Commit new sealing work                  number=141 sealhash=863179..10b545 uncles=0 txs=0 gas=0     fees=0          elapsed="123.186µs"
+INFO [05-10|23:18:15.192] Commit new sealing work                  number=141 sealhash=863179..10b545 uncles=0 txs=0 gas=0     fees=0          elapsed="230.364µs"
+INFO [05-10|23:18:16.874] Successfully sealed new block            number=141 sealhash=863179..10b545 hash=1cdc7b..d9fde1 elapsed=1.682s
+INFO [05-10|23:18:16.874] 🔗 block reached canonical chain          number=134 hash=1467a2..f8bde2
+INFO [05-10|23:18:16.874] 🔨 mined potential block                  number=141 hash=1cdc7b..d9fde1
+INFO [05-10|23:18:16.874] Commit new sealing work                  number=142 sealhash=fec16c..f703bf uncles=0 txs=0 gas=0     fees=0          elapsed="151.652µs"
+INFO [05-10|23:18:16.874] Commit new sealing work                  number=142 sealhash=fec16c..f703bf uncles=0 txs=0 gas=0     fees=0          elapsed="259.892µs"
+WARN [05-10|23:18:17.795] Snapshot extension registration failed   peer=ba41eba5 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:17.944] Snapshot extension registration failed   peer=6823e61c err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:17.948] Snapshot extension registration failed   peer=606ca169 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:17.948] Snapshot extension registration failed   peer=6a90feab err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:17.962] Snapshot extension registration failed   peer=6938e372 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:17.968] Snapshot extension registration failed   peer=2d843094 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:17.978] Snapshot extension registration failed   peer=68fc82d0 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:17.989] Snapshot extension registration failed   peer=5ff16edc err="peer connected on snap without compatible eth support"
+INFO [05-10|23:18:18.072] Successfully sealed new block            number=142 sealhash=fec16c..f703bf hash=de64b7..0439f6 elapsed=1.198s
+INFO [05-10|23:18:18.072] 🔗 block reached canonical chain          number=135 hash=feadde..649479
+INFO [05-10|23:18:18.072] 🔨 mined potential block                  number=142 hash=de64b7..0439f6
+INFO [05-10|23:18:18.072] Commit new sealing work                  number=143 sealhash=605914..7ad6dd uncles=0 txs=0 gas=0     fees=0          elapsed="204.434µs"
+INFO [05-10|23:18:18.072] Commit new sealing work                  number=143 sealhash=605914..7ad6dd uncles=0 txs=0 gas=0     fees=0          elapsed="334.274µs"
+INFO [05-10|23:18:19.980] Looking for peers                        peercount=0 tried=168 static=0
+INFO [05-10|23:18:20.822] Successfully sealed new block            number=143 sealhash=605914..7ad6dd hash=d0bd0e..b3f479 elapsed=2.750s
+INFO [05-10|23:18:20.823] 🔗 block reached canonical chain          number=136 hash=10223e..4cbbc4
+INFO [05-10|23:18:20.823] 🔨 mined potential block                  number=143 hash=d0bd0e..b3f479
+INFO [05-10|23:18:20.823] Commit new sealing work                  number=144 sealhash=bad1f7..4a07c8 uncles=0 txs=0 gas=0     fees=0          elapsed="298.212µs"
+INFO [05-10|23:18:20.823] Commit new sealing work                  number=144 sealhash=bad1f7..4a07c8 uncles=0 txs=0 gas=0     fees=0          elapsed="470.899µs"
+WARN [05-10|23:18:21.275] Snapshot extension registration failed   peer=52a25181 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:21.755] Snapshot extension registration failed   peer=71e39ee6 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:18:21.972] Successfully sealed new block            number=144 sealhash=bad1f7..4a07c8 hash=100956..d5a616 elapsed=1.148s
+INFO [05-10|23:18:21.972] 🔗 block reached canonical chain          number=137 hash=c99a0e..2dfed5
+INFO [05-10|23:18:21.979] Commit new sealing work                  number=145 sealhash=b69d62..97e6f6 uncles=0 txs=0 gas=0     fees=0          elapsed=7.047ms
+INFO [05-10|23:18:21.979] Commit new sealing work                  number=145 sealhash=b69d62..97e6f6 uncles=0 txs=0 gas=0     fees=0          elapsed=7.157ms
+INFO [05-10|23:18:21.979] 🔨 mined potential block                  number=144 hash=100956..d5a616
+INFO [05-10|23:18:22.320] Successfully sealed new block            number=145 sealhash=b69d62..97e6f6 hash=9b4f9a..b710a9 elapsed=348.151ms
+INFO [05-10|23:18:22.320] 🔗 block reached canonical chain          number=138 hash=5826ff..90d39d
+INFO [05-10|23:18:22.329] Commit new sealing work                  number=146 sealhash=db0141..b4527c uncles=0 txs=0 gas=0     fees=0          elapsed=8.957ms
+INFO [05-10|23:18:22.329] Commit new sealing work                  number=146 sealhash=db0141..b4527c uncles=0 txs=0 gas=0     fees=0          elapsed=9.060ms
+INFO [05-10|23:18:22.329] 🔨 mined potential block                  number=145 hash=9b4f9a..b710a9
+INFO [05-10|23:18:24.061] Successfully sealed new block            number=146 sealhash=db0141..b4527c hash=4c03b4..f0b2c1 elapsed=1.740s
+INFO [05-10|23:18:24.061] 🔗 block reached canonical chain          number=139 hash=161a75..5e45c2
+INFO [05-10|23:18:24.069] Commit new sealing work                  number=147 sealhash=8ba93b..f329b1 uncles=0 txs=0 gas=0     fees=0          elapsed=7.617ms
+INFO [05-10|23:18:24.069] Commit new sealing work                  number=147 sealhash=8ba93b..f329b1 uncles=0 txs=0 gas=0     fees=0          elapsed=7.734ms
+INFO [05-10|23:18:24.069] 🔨 mined potential block                  number=146 hash=4c03b4..f0b2c1
+INFO [05-10|23:18:27.009] Successfully sealed new block            number=147 sealhash=8ba93b..f329b1 hash=1adb85..9bbbe7 elapsed=2.947s
+INFO [05-10|23:18:27.009] 🔗 block reached canonical chain          number=140 hash=c97c92..550c9c
+INFO [05-10|23:18:27.017] Commit new sealing work                  number=148 sealhash=b8fe45..9e6164 uncles=0 txs=0 gas=0     fees=0          elapsed=8.199ms
+INFO [05-10|23:18:27.017] Commit new sealing work                  number=148 sealhash=b8fe45..9e6164 uncles=0 txs=0 gas=0     fees=0          elapsed=8.287ms
+INFO [05-10|23:18:27.017] 🔨 mined potential block                  number=147 hash=1adb85..9bbbe7
+WARN [05-10|23:18:28.466] Snapshot extension registration failed   peer=6a23bda0 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:28.506] Snapshot extension registration failed   peer=6b36f791 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:18:29.130] Successfully sealed new block            number=148 sealhash=b8fe45..9e6164 hash=d6c7d2..4da1d8 elapsed=2.120s
+INFO [05-10|23:18:29.130] 🔗 block reached canonical chain          number=141 hash=1cdc7b..d9fde1
+INFO [05-10|23:18:29.130] 🔨 mined potential block                  number=148 hash=d6c7d2..4da1d8
+INFO [05-10|23:18:29.130] Commit new sealing work                  number=149 sealhash=1dc731..3d23b2 uncles=0 txs=0 gas=0     fees=0          elapsed="135.064µs"
+INFO [05-10|23:18:29.130] Commit new sealing work                  number=149 sealhash=1dc731..3d23b2 uncles=0 txs=0 gas=0     fees=0          elapsed="239.796µs"
+INFO [05-10|23:18:30.042] Looking for peers                        peercount=0 tried=120 static=0
+INFO [05-10|23:18:32.583] Successfully sealed new block            number=149 sealhash=1dc731..3d23b2 hash=6110b7..f64bcc elapsed=3.452s
+INFO [05-10|23:18:32.583] 🔗 block reached canonical chain          number=142 hash=de64b7..0439f6
+INFO [05-10|23:18:32.583] 🔨 mined potential block                  number=149 hash=6110b7..f64bcc
+INFO [05-10|23:18:32.583] Commit new sealing work                  number=150 sealhash=cd76a3..f03c85 uncles=0 txs=0 gas=0     fees=0          elapsed="140.766µs"
+INFO [05-10|23:18:32.583] Commit new sealing work                  number=150 sealhash=cd76a3..f03c85 uncles=0 txs=0 gas=0     fees=0          elapsed="218.264µs"
+INFO [05-10|23:18:33.190] Successfully sealed new block            number=150 sealhash=cd76a3..f03c85 hash=2b61f8..c21223 elapsed=606.609ms
+INFO [05-10|23:18:33.190] 🔗 block reached canonical chain          number=143 hash=d0bd0e..b3f479
+INFO [05-10|23:18:33.197] Commit new sealing work                  number=151 sealhash=43be26..56671a uncles=0 txs=0 gas=0     fees=0          elapsed=7.048ms
+INFO [05-10|23:18:33.197] Commit new sealing work                  number=151 sealhash=43be26..56671a uncles=0 txs=0 gas=0     fees=0          elapsed=7.148ms
+INFO [05-10|23:18:33.197] 🔨 mined potential block                  number=150 hash=2b61f8..c21223
+WARN [05-10|23:18:33.996] Snapshot extension registration failed   peer=5002506a err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:33.997] Snapshot extension registration failed   peer=502dcf96 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:34.900] Snapshot extension registration failed   peer=69cf1507 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:34.905] Snapshot extension registration failed   peer=632b4b8b err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:34.912] Snapshot extension registration failed   peer=36b9bef3 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:35.087] Snapshot extension registration failed   peer=4aa25b4f err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:36.209] Snapshot extension registration failed   peer=0e011f7a err="peer connected on snap without compatible eth support"
+INFO [05-10|23:18:36.353] Successfully sealed new block            number=151 sealhash=43be26..56671a hash=fda2af..4d3568 elapsed=3.162s
+INFO [05-10|23:18:36.353] 🔗 block reached canonical chain          number=144 hash=100956..d5a616
+INFO [05-10|23:18:36.353] 🔨 mined potential block                  number=151 hash=fda2af..4d3568
+INFO [05-10|23:18:36.353] Commit new sealing work                  number=152 sealhash=822447..6cdac7 uncles=0 txs=0 gas=0     fees=0          elapsed="116.181µs"
+INFO [05-10|23:18:36.353] Commit new sealing work                  number=152 sealhash=822447..6cdac7 uncles=0 txs=0 gas=0     fees=0          elapsed="227.216µs"
+WARN [05-10|23:18:36.767] Snapshot extension registration failed   peer=7103ea46 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:18:37.130] Successfully sealed new block            number=152 sealhash=822447..6cdac7 hash=e4807d..081539 elapsed=776.474ms
+INFO [05-10|23:18:37.130] 🔗 block reached canonical chain          number=145 hash=9b4f9a..b710a9
+INFO [05-10|23:18:37.130] 🔨 mined potential block                  number=152 hash=e4807d..081539
+INFO [05-10|23:18:37.130] Commit new sealing work                  number=153 sealhash=432fd2..17a62d uncles=0 txs=0 gas=0     fees=0          elapsed="217.678µs"
+INFO [05-10|23:18:37.130] Commit new sealing work                  number=153 sealhash=432fd2..17a62d uncles=0 txs=0 gas=0     fees=0          elapsed="312.019µs"
+WARN [05-10|23:18:37.332] Snapshot extension registration failed   peer=6c86139a err="peer connected on snap without compatible eth support"
+INFO [05-10|23:18:38.285] Successfully sealed new block            number=153 sealhash=432fd2..17a62d hash=b578d8..e75612 elapsed=1.154s
+INFO [05-10|23:18:38.285] 🔗 block reached canonical chain          number=146 hash=4c03b4..f0b2c1
+INFO [05-10|23:18:38.285] 🔨 mined potential block                  number=153 hash=b578d8..e75612
+INFO [05-10|23:18:38.285] Commit new sealing work                  number=154 sealhash=a693a7..c4742e uncles=0 txs=0 gas=0     fees=0          elapsed="129.692µs"
+INFO [05-10|23:18:38.285] Commit new sealing work                  number=154 sealhash=a693a7..c4742e uncles=0 txs=0 gas=0     fees=0          elapsed="247.847µs"
+INFO [05-10|23:18:40.064] Looking for peers                        peercount=0 tried=165 static=0
+INFO [05-10|23:18:41.926] Successfully sealed new block            number=154 sealhash=a693a7..c4742e hash=cb31f6..e90302 elapsed=3.641s
+INFO [05-10|23:18:41.926] 🔗 block reached canonical chain          number=147 hash=1adb85..9bbbe7
+INFO [05-10|23:18:41.926] 🔨 mined potential block                  number=154 hash=cb31f6..e90302
+INFO [05-10|23:18:41.927] Commit new sealing work                  number=155 sealhash=3372d3..0f3341 uncles=0 txs=0 gas=0     fees=0          elapsed="128.403µs"
+INFO [05-10|23:18:41.927] Commit new sealing work                  number=155 sealhash=3372d3..0f3341 uncles=0 txs=0 gas=0     fees=0          elapsed="227.869µs"
+INFO [05-10|23:18:42.318] Successfully sealed new block            number=155 sealhash=3372d3..0f3341 hash=3600ea..b36a3a elapsed=391.264ms
+INFO [05-10|23:18:42.318] 🔗 block reached canonical chain          number=148 hash=d6c7d2..4da1d8
+INFO [05-10|23:18:42.318] 🔨 mined potential block                  number=155 hash=3600ea..b36a3a
+INFO [05-10|23:18:42.318] Commit new sealing work                  number=156 sealhash=f1f115..4cb916 uncles=0 txs=0 gas=0     fees=0          elapsed="99.114µs"
+INFO [05-10|23:18:42.318] Commit new sealing work                  number=156 sealhash=f1f115..4cb916 uncles=0 txs=0 gas=0     fees=0          elapsed="201.056µs"
+INFO [05-10|23:18:43.363] Successfully sealed new block            number=156 sealhash=f1f115..4cb916 hash=6a0ad6..369695 elapsed=1.045s
+INFO [05-10|23:18:43.364] 🔗 block reached canonical chain          number=149 hash=6110b7..f64bcc
+INFO [05-10|23:18:43.364] 🔨 mined potential block                  number=156 hash=6a0ad6..369695
+INFO [05-10|23:18:43.364] Commit new sealing work                  number=157 sealhash=b683b4..d8f714 uncles=0 txs=0 gas=0     fees=0          elapsed="137.121µs"
+INFO [05-10|23:18:43.364] Commit new sealing work                  number=157 sealhash=b683b4..d8f714 uncles=0 txs=0 gas=0     fees=0          elapsed="249.124µs"
+WARN [05-10|23:18:46.505] Snapshot extension registration failed   peer=93a49c92 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:18:47.893] Successfully sealed new block            number=157 sealhash=b683b4..d8f714 hash=f60c79..2091cf elapsed=4.529s
+INFO [05-10|23:18:47.893] 🔗 block reached canonical chain          number=150 hash=2b61f8..c21223
+INFO [05-10|23:18:47.893] 🔨 mined potential block                  number=157 hash=f60c79..2091cf
+INFO [05-10|23:18:47.893] Commit new sealing work                  number=158 sealhash=9d7a10..f9e878 uncles=0 txs=0 gas=0     fees=0          elapsed="116.194µs"
+INFO [05-10|23:18:47.894] Commit new sealing work                  number=158 sealhash=9d7a10..f9e878 uncles=0 txs=0 gas=0     fees=0          elapsed="216.956µs"
+WARN [05-10|23:18:49.057] Snapshot extension registration failed   peer=e0bfa440 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:49.057] Snapshot extension registration failed   peer=e0c5393b err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:49.097] Snapshot extension registration failed   peer=e610b4ed err="peer connected on snap without compatible eth support"
+INFO [05-10|23:18:50.203] Looking for peers                        peercount=0 tried=158 static=0
+INFO [05-10|23:18:51.479] Successfully sealed new block            number=158 sealhash=9d7a10..f9e878 hash=6f83b5..588db4 elapsed=3.585s
+INFO [05-10|23:18:51.479] 🔗 block reached canonical chain          number=151 hash=fda2af..4d3568
+INFO [05-10|23:18:51.479] 🔨 mined potential block                  number=158 hash=6f83b5..588db4
+INFO [05-10|23:18:51.479] Commit new sealing work                  number=159 sealhash=966c50..c8eee3 uncles=0 txs=0 gas=0     fees=0          elapsed="136.777µs"
+INFO [05-10|23:18:51.480] Commit new sealing work                  number=159 sealhash=966c50..c8eee3 uncles=0 txs=0 gas=0     fees=0          elapsed="267.446µs"
+INFO [05-10|23:18:52.411] Successfully sealed new block            number=159 sealhash=966c50..c8eee3 hash=b0318a..dc7877 elapsed=932.013ms
+INFO [05-10|23:18:52.412] 🔗 block reached canonical chain          number=152 hash=e4807d..081539
+INFO [05-10|23:18:52.412] 🔨 mined potential block                  number=159 hash=b0318a..dc7877
+INFO [05-10|23:18:52.412] Commit new sealing work                  number=160 sealhash=6067fa..82146f uncles=0 txs=0 gas=0     fees=0          elapsed="119.622µs"
+INFO [05-10|23:18:52.412] Commit new sealing work                  number=160 sealhash=6067fa..82146f uncles=0 txs=0 gas=0     fees=0          elapsed="199.201µs"
+INFO [05-10|23:18:53.060] Successfully sealed new block            number=160 sealhash=6067fa..82146f hash=8abc59..3e164b elapsed=647.932ms
+INFO [05-10|23:18:53.060] 🔗 block reached canonical chain          number=153 hash=b578d8..e75612
+INFO [05-10|23:18:53.060] 🔨 mined potential block                  number=160 hash=8abc59..3e164b
+INFO [05-10|23:18:53.060] Commit new sealing work                  number=161 sealhash=3934f8..96da2c uncles=0 txs=0 gas=0     fees=0          elapsed="86.219µs"
+INFO [05-10|23:18:53.069] Commit new sealing work                  number=161 sealhash=3934f8..96da2c uncles=0 txs=0 gas=0     fees=0          elapsed=8.916ms
+INFO [05-10|23:18:53.440] Successfully sealed new block            number=161 sealhash=3934f8..96da2c hash=eb1ef9..691309 elapsed=380.010ms
+INFO [05-10|23:18:53.440] 🔗 block reached canonical chain          number=154 hash=cb31f6..e90302
+INFO [05-10|23:18:53.448] Commit new sealing work                  number=162 sealhash=edd157..cf75ad uncles=0 txs=0 gas=0     fees=0          elapsed=8.290ms
+INFO [05-10|23:18:53.448] Commit new sealing work                  number=162 sealhash=edd157..cf75ad uncles=0 txs=0 gas=0     fees=0          elapsed=8.376ms
+INFO [05-10|23:18:53.448] 🔨 mined potential block                  number=161 hash=eb1ef9..691309
+INFO [05-10|23:18:54.724] Successfully sealed new block            number=162 sealhash=edd157..cf75ad hash=55cc56..aabc9e elapsed=1.284s
+INFO [05-10|23:18:54.724] 🔗 block reached canonical chain          number=155 hash=3600ea..b36a3a
+INFO [05-10|23:18:54.724] 🔨 mined potential block                  number=162 hash=55cc56..aabc9e
+INFO [05-10|23:18:54.725] Commit new sealing work                  number=163 sealhash=9b8289..6d7d84 uncles=0 txs=0 gas=0     fees=0          elapsed="147.903µs"
+INFO [05-10|23:18:54.725] Commit new sealing work                  number=163 sealhash=9b8289..6d7d84 uncles=0 txs=0 gas=0     fees=0          elapsed="228.249µs"
+INFO [05-10|23:18:54.993] Successfully sealed new block            number=163 sealhash=9b8289..6d7d84 hash=13ae01..b479cd elapsed=268.073ms
+INFO [05-10|23:18:54.993] 🔗 block reached canonical chain          number=156 hash=6a0ad6..369695
+INFO [05-10|23:18:54.993] 🔨 mined potential block                  number=163 hash=13ae01..b479cd
+INFO [05-10|23:18:54.993] Commit new sealing work                  number=164 sealhash=a4470a..9a5c59 uncles=0 txs=0 gas=0     fees=0          elapsed="114.715µs"
+INFO [05-10|23:18:54.993] Commit new sealing work                  number=164 sealhash=a4470a..9a5c59 uncles=0 txs=0 gas=0     fees=0          elapsed="193.249µs"
+WARN [05-10|23:18:55.507] Snapshot extension registration failed   peer=e27fb17f err="peer connected on snap without compatible eth support"
+INFO [05-10|23:18:57.401] Successfully sealed new block            number=164 sealhash=a4470a..9a5c59 hash=d6d1af..9a9522 elapsed=2.408s
+INFO [05-10|23:18:57.401] 🔗 block reached canonical chain          number=157 hash=f60c79..2091cf
+INFO [05-10|23:18:57.401] 🔨 mined potential block                  number=164 hash=d6d1af..9a9522
+INFO [05-10|23:18:57.401] Commit new sealing work                  number=165 sealhash=f04dce..ff8344 uncles=0 txs=0 gas=0     fees=0          elapsed="148.726µs"
+INFO [05-10|23:18:57.401] Commit new sealing work                  number=165 sealhash=f04dce..ff8344 uncles=0 txs=0 gas=0     fees=0          elapsed="308.474µs"
+WARN [05-10|23:18:58.127] Snapshot extension registration failed   peer=6ff591f0 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:58.551] Snapshot extension registration failed   peer=6823e61c err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:58.592] Snapshot extension registration failed   peer=0551fbb7 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:58.594] Snapshot extension registration failed   peer=680d6fbc err="peer connected on snap without compatible eth support"
+WARN [05-10|23:18:58.610] Snapshot extension registration failed   peer=7d28432a err="peer connected on snap without compatible eth support"
+INFO [05-10|23:18:58.848] Successfully sealed new block            number=165 sealhash=f04dce..ff8344 hash=61c180..c3d7f1 elapsed=1.446s
+INFO [05-10|23:18:58.848] 🔗 block reached canonical chain          number=158 hash=6f83b5..588db4
+INFO [05-10|23:18:58.848] 🔨 mined potential block                  number=165 hash=61c180..c3d7f1
+INFO [05-10|23:18:58.848] Commit new sealing work                  number=166 sealhash=c9afc7..4c6b9f uncles=0 txs=0 gas=0     fees=0          elapsed="157.033µs"
+INFO [05-10|23:18:58.848] Commit new sealing work                  number=166 sealhash=c9afc7..4c6b9f uncles=0 txs=0 gas=0     fees=0          elapsed="280.662µs"
+INFO [05-10|23:19:00.284] Looking for peers                        peercount=0 tried=111 static=0
+WARN [05-10|23:19:00.700] Snapshot extension registration failed   peer=0b6be525 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:00.835] Snapshot extension registration failed   peer=6a90feab err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:01.152] Snapshot extension registration failed   peer=439a092e err="peer connected on snap without compatible eth support"
+INFO [05-10|23:19:04.115] Successfully sealed new block            number=166 sealhash=c9afc7..4c6b9f hash=f75750..af3533 elapsed=5.267s
+INFO [05-10|23:19:04.116] 🔗 block reached canonical chain          number=159 hash=b0318a..dc7877
+INFO [05-10|23:19:04.122] Commit new sealing work                  number=167 sealhash=73ea2b..6761dc uncles=0 txs=0 gas=0     fees=0          elapsed=6.527ms
+INFO [05-10|23:19:04.122] Commit new sealing work                  number=167 sealhash=73ea2b..6761dc uncles=0 txs=0 gas=0     fees=0          elapsed=6.609ms
+INFO [05-10|23:19:04.122] 🔨 mined potential block                  number=166 hash=f75750..af3533
+INFO [05-10|23:19:07.215] Successfully sealed new block            number=167 sealhash=73ea2b..6761dc hash=3046b1..748f6c elapsed=3.099s
+INFO [05-10|23:19:07.215] 🔗 block reached canonical chain          number=160 hash=8abc59..3e164b
+INFO [05-10|23:19:07.215] 🔨 mined potential block                  number=167 hash=3046b1..748f6c
+INFO [05-10|23:19:07.215] Commit new sealing work                  number=168 sealhash=443358..06c764 uncles=0 txs=0 gas=0     fees=0          elapsed="161.854µs"
+INFO [05-10|23:19:07.216] Commit new sealing work                  number=168 sealhash=443358..06c764 uncles=0 txs=0 gas=0     fees=0          elapsed="284.402µs"
+WARN [05-10|23:19:09.549] Snapshot extension registration failed   peer=7a58d4f4 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:09.838] Snapshot extension registration failed   peer=6fc983f0 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:09.978] Snapshot extension registration failed   peer=414c8e8d err="peer connected on snap without compatible eth support"
+INFO [05-10|23:19:10.485] Looking for peers                        peercount=0 tried=136 static=0
+WARN [05-10|23:19:11.039] Snapshot extension registration failed   peer=b07d1ce8 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:11.066] Snapshot extension registration failed   peer=5848f2ba err="peer connected on snap without compatible eth support"
+INFO [05-10|23:19:11.730] Successfully sealed new block            number=168 sealhash=443358..06c764 hash=4e9bd9..6d1f76 elapsed=4.514s
+INFO [05-10|23:19:11.730] 🔗 block reached canonical chain          number=161 hash=eb1ef9..691309
+INFO [05-10|23:19:11.730] 🔨 mined potential block                  number=168 hash=4e9bd9..6d1f76
+INFO [05-10|23:19:11.730] Commit new sealing work                  number=169 sealhash=b1bc65..278c8b uncles=0 txs=0 gas=0     fees=0          elapsed="146.003µs"
+INFO [05-10|23:19:11.730] Commit new sealing work                  number=169 sealhash=b1bc65..278c8b uncles=0 txs=0 gas=0     fees=0          elapsed="250.604µs"
+WARN [05-10|23:19:12.324] Snapshot extension registration failed   peer=cebe2c17 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:19:13.507] Successfully sealed new block            number=169 sealhash=b1bc65..278c8b hash=b1f36d..0d73be elapsed=1.776s
+INFO [05-10|23:19:13.507] 🔗 block reached canonical chain          number=162 hash=55cc56..aabc9e
+INFO [05-10|23:19:13.507] 🔨 mined potential block                  number=169 hash=b1f36d..0d73be
+INFO [05-10|23:19:13.507] Commit new sealing work                  number=170 sealhash=351634..ffc064 uncles=0 txs=0 gas=0     fees=0          elapsed="144.946µs"
+INFO [05-10|23:19:13.507] Commit new sealing work                  number=170 sealhash=351634..ffc064 uncles=0 txs=0 gas=0     fees=0          elapsed="248.549µs"
+WARN [05-10|23:19:19.273] Snapshot extension registration failed   peer=08437278 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:19.281] Snapshot extension registration failed   peer=0fac6959 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:19:20.654] Looking for peers                        peercount=0 tried=163 static=0
+INFO [05-10|23:19:21.306] Successfully sealed new block            number=170 sealhash=351634..ffc064 hash=787fb4..30d9aa elapsed=7.799s
+INFO [05-10|23:19:21.306] 🔗 block reached canonical chain          number=163 hash=13ae01..b479cd
+INFO [05-10|23:19:21.308] Commit new sealing work                  number=171 sealhash=af7521..00809f uncles=0 txs=0 gas=0     fees=0          elapsed=1.836ms
+INFO [05-10|23:19:21.308] Commit new sealing work                  number=171 sealhash=af7521..00809f uncles=0 txs=0 gas=0     fees=0          elapsed=1.961ms
+INFO [05-10|23:19:21.308] 🔨 mined potential block                  number=170 hash=787fb4..30d9aa
+INFO [05-10|23:19:21.762] Successfully sealed new block            number=171 sealhash=af7521..00809f hash=031b1d..e6f0e5 elapsed=455.611ms
+INFO [05-10|23:19:21.762] 🔗 block reached canonical chain          number=164 hash=d6d1af..9a9522
+INFO [05-10|23:19:21.762] 🔨 mined potential block                  number=171 hash=031b1d..e6f0e5
+INFO [05-10|23:19:21.762] Commit new sealing work                  number=172 sealhash=ca8dcb..d5d19a uncles=0 txs=0 gas=0     fees=0          elapsed="110.884µs"
+INFO [05-10|23:19:21.762] Commit new sealing work                  number=172 sealhash=ca8dcb..d5d19a uncles=0 txs=0 gas=0     fees=0          elapsed="210.607µs"
+INFO [05-10|23:19:24.617] Successfully sealed new block            number=172 sealhash=ca8dcb..d5d19a hash=69f1b4..e97c43 elapsed=2.854s
+INFO [05-10|23:19:24.617] 🔗 block reached canonical chain          number=165 hash=61c180..c3d7f1
+INFO [05-10|23:19:24.625] Commit new sealing work                  number=173 sealhash=5fe81b..d8f476 uncles=0 txs=0 gas=0     fees=0          elapsed=8.083ms
+INFO [05-10|23:19:24.625] Commit new sealing work                  number=173 sealhash=5fe81b..d8f476 uncles=0 txs=0 gas=0     fees=0          elapsed=8.189ms
+INFO [05-10|23:19:24.625] 🔨 mined potential block                  number=172 hash=69f1b4..e97c43
+WARN [05-10|23:19:26.103] Snapshot extension registration failed   peer=ca6e1c50 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:26.393] Snapshot extension registration failed   peer=93a49c92 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:27.087] Snapshot extension registration failed   peer=04b9809a err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:28.368] Snapshot extension registration failed   peer=4b96d075 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:29.169] Snapshot extension registration failed   peer=69cf1507 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:29.207] Snapshot extension registration failed   peer=6668320d err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:29.486] Snapshot extension registration failed   peer=690302d1 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:29.670] Snapshot extension registration failed   peer=9b09689a err="peer connected on snap without compatible eth support"
+INFO [05-10|23:19:30.763] Looking for peers                        peercount=0 tried=130 static=0
+WARN [05-10|23:19:37.861] Snapshot extension registration failed   peer=6a90feab err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:37.862] Snapshot extension registration failed   peer=6823e61c err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:37.891] Snapshot extension registration failed   peer=47092ddb err="peer connected on snap without compatible eth support"
+INFO [05-10|23:19:40.745] Successfully sealed new block            number=173 sealhash=5fe81b..d8f476 hash=d80b0e..f478c4 elapsed=16.128s
+INFO [05-10|23:19:40.745] 🔗 block reached canonical chain          number=166 hash=f75750..af3533
+INFO [05-10|23:19:40.753] Commit new sealing work                  number=174 sealhash=5cbad5..98838f uncles=0 txs=0 gas=0     fees=0          elapsed=7.498ms
+INFO [05-10|23:19:40.753] Commit new sealing work                  number=174 sealhash=5cbad5..98838f uncles=0 txs=0 gas=0     fees=0          elapsed=7.609ms
+INFO [05-10|23:19:40.753] 🔨 mined potential block                  number=173 hash=d80b0e..f478c4
+INFO [05-10|23:19:40.805] Looking for peers                        peercount=0 tried=95  static=0
+INFO [05-10|23:19:41.905] Successfully sealed new block            number=174 sealhash=5cbad5..98838f hash=c94c17..1a32e8 elapsed=1.159s
+INFO [05-10|23:19:41.905] 🔗 block reached canonical chain          number=167 hash=3046b1..748f6c
+INFO [05-10|23:19:41.905] 🔨 mined potential block                  number=174 hash=c94c17..1a32e8
+INFO [05-10|23:19:41.905] Commit new sealing work                  number=175 sealhash=ba3d14..cb5962 uncles=0 txs=0 gas=0     fees=0          elapsed="187.215µs"
+INFO [05-10|23:19:41.905] Commit new sealing work                  number=175 sealhash=ba3d14..cb5962 uncles=0 txs=0 gas=0     fees=0          elapsed="285.777µs"
+INFO [05-10|23:19:42.022] Successfully sealed new block            number=175 sealhash=ba3d14..cb5962 hash=c1d705..bf13aa elapsed=116.696ms
+INFO [05-10|23:19:42.022] 🔗 block reached canonical chain          number=168 hash=4e9bd9..6d1f76
+INFO [05-10|23:19:42.022] 🔨 mined potential block                  number=175 hash=c1d705..bf13aa
+INFO [05-10|23:19:42.022] Commit new sealing work                  number=176 sealhash=792bff..c93633 uncles=0 txs=0 gas=0     fees=0          elapsed="147.448µs"
+INFO [05-10|23:19:42.022] Commit new sealing work                  number=176 sealhash=792bff..c93633 uncles=0 txs=0 gas=0     fees=0          elapsed="264.268µs"
+INFO [05-10|23:19:42.966] Successfully sealed new block            number=176 sealhash=792bff..c93633 hash=725b2f..b14990 elapsed=943.976ms
+INFO [05-10|23:19:42.966] 🔗 block reached canonical chain          number=169 hash=b1f36d..0d73be
+INFO [05-10|23:19:42.973] Commit new sealing work                  number=177 sealhash=e9e561..d43240 uncles=0 txs=0 gas=0     fees=0          elapsed=6.724ms
+INFO [05-10|23:19:42.973] Commit new sealing work                  number=177 sealhash=e9e561..d43240 uncles=0 txs=0 gas=0     fees=0          elapsed=6.822ms
+INFO [05-10|23:19:42.973] 🔨 mined potential block                  number=176 hash=725b2f..b14990
+INFO [05-10|23:19:43.378] Successfully sealed new block            number=177 sealhash=e9e561..d43240 hash=967ba9..1b78e3 elapsed=411.811ms
+INFO [05-10|23:19:43.378] 🔗 block reached canonical chain          number=170 hash=787fb4..30d9aa
+INFO [05-10|23:19:43.378] 🔨 mined potential block                  number=177 hash=967ba9..1b78e3
+INFO [05-10|23:19:43.378] Commit new sealing work                  number=178 sealhash=afa712..391541 uncles=0 txs=0 gas=0     fees=0          elapsed="218.62µs"
+INFO [05-10|23:19:43.378] Commit new sealing work                  number=178 sealhash=afa712..391541 uncles=0 txs=0 gas=0     fees=0          elapsed="350.68µs"
+INFO [05-10|23:19:47.119] Successfully sealed new block            number=178 sealhash=afa712..391541 hash=574b11..9020be elapsed=3.740s
+INFO [05-10|23:19:47.119] 🔗 block reached canonical chain          number=171 hash=031b1d..e6f0e5
+INFO [05-10|23:19:47.119] 🔨 mined potential block                  number=178 hash=574b11..9020be
+INFO [05-10|23:19:47.119] Commit new sealing work                  number=179 sealhash=223a7c..8456c6 uncles=0 txs=0 gas=0     fees=0          elapsed="128.512µs"
+INFO [05-10|23:19:47.119] Commit new sealing work                  number=179 sealhash=223a7c..8456c6 uncles=0 txs=0 gas=0     fees=0          elapsed="239.72µs"
+INFO [05-10|23:19:48.594] Successfully sealed new block            number=179 sealhash=223a7c..8456c6 hash=480495..b2cc13 elapsed=1.474s
+INFO [05-10|23:19:48.594] 🔗 block reached canonical chain          number=172 hash=69f1b4..e97c43
+INFO [05-10|23:19:48.594] 🔨 mined potential block                  number=179 hash=480495..b2cc13
+INFO [05-10|23:19:48.594] Commit new sealing work                  number=180 sealhash=04d001..19e1d8 uncles=0 txs=0 gas=0     fees=0          elapsed="120.169µs"
+INFO [05-10|23:19:48.594] Commit new sealing work                  number=180 sealhash=04d001..19e1d8 uncles=0 txs=0 gas=0     fees=0          elapsed="240.618µs"
+INFO [05-10|23:19:50.166] Successfully sealed new block            number=180 sealhash=04d001..19e1d8 hash=c1b427..8aaf15 elapsed=1.571s
+INFO [05-10|23:19:50.166] 🔗 block reached canonical chain          number=173 hash=d80b0e..f478c4
+INFO [05-10|23:19:50.166] 🔨 mined potential block                  number=180 hash=c1b427..8aaf15
+INFO [05-10|23:19:50.166] Commit new sealing work                  number=181 sealhash=c6deed..e2a1ff uncles=0 txs=0 gas=0     fees=0          elapsed="138.475µs"
+INFO [05-10|23:19:50.166] Commit new sealing work                  number=181 sealhash=c6deed..e2a1ff uncles=0 txs=0 gas=0     fees=0          elapsed="231.167µs"
+INFO [05-10|23:19:50.938] Looking for peers                        peercount=0 tried=139 static=0
+WARN [05-10|23:19:52.773] Snapshot extension registration failed   peer=6a064f04 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:52.937] Snapshot extension registration failed   peer=7ce1caeb err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:52.944] Snapshot extension registration failed   peer=611b234d err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:52.958] Snapshot extension registration failed   peer=9d0d8528 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:19:53.776] Snapshot extension registration failed   peer=38e3f66e err="peer connected on snap without compatible eth support"
+INFO [05-10|23:19:54.091] Successfully sealed new block            number=181 sealhash=c6deed..e2a1ff hash=2a1148..4c9666 elapsed=3.925s
+INFO [05-10|23:19:54.091] 🔗 block reached canonical chain          number=174 hash=c94c17..1a32e8
+INFO [05-10|23:19:54.091] 🔨 mined potential block                  number=181 hash=2a1148..4c9666
+INFO [05-10|23:19:54.092] Commit new sealing work                  number=182 sealhash=7d650f..839adc uncles=0 txs=0 gas=0     fees=0          elapsed="124.291µs"
+INFO [05-10|23:19:54.092] Commit new sealing work                  number=182 sealhash=7d650f..839adc uncles=0 txs=0 gas=0     fees=0          elapsed="237.635µs"
+WARN [05-10|23:19:54.209] Snapshot extension registration failed   peer=fcbb8725 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:19:55.287] Successfully sealed new block            number=182 sealhash=7d650f..839adc hash=f8adcf..231b8f elapsed=1.195s
+INFO [05-10|23:19:55.287] 🔗 block reached canonical chain          number=175 hash=c1d705..bf13aa
+INFO [05-10|23:19:55.287] 🔨 mined potential block                  number=182 hash=f8adcf..231b8f
+INFO [05-10|23:19:55.287] Commit new sealing work                  number=183 sealhash=409255..a30c5e uncles=0 txs=0 gas=0     fees=0          elapsed="124.252µs"
+INFO [05-10|23:19:55.288] Commit new sealing work                  number=183 sealhash=409255..a30c5e uncles=0 txs=0 gas=0     fees=0          elapsed="218.45µs"
+INFO [05-10|23:19:56.146] Successfully sealed new block            number=183 sealhash=409255..a30c5e hash=c30b0f..040167 elapsed=858.143ms
+INFO [05-10|23:19:56.146] 🔗 block reached canonical chain          number=176 hash=725b2f..b14990
+INFO [05-10|23:19:56.152] Commit new sealing work                  number=184 sealhash=f1aa04..ef6b2f uncles=0 txs=0 gas=0     fees=0          elapsed=6.497ms
+INFO [05-10|23:19:56.152] Commit new sealing work                  number=184 sealhash=f1aa04..ef6b2f uncles=0 txs=0 gas=0     fees=0          elapsed=6.585ms
+INFO [05-10|23:19:56.152] 🔨 mined potential block                  number=183 hash=c30b0f..040167
+WARN [05-10|23:20:00.431] Snapshot extension registration failed   peer=e0110baa err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:00.816] Snapshot extension registration failed   peer=e0bfa440 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:00.825] Snapshot extension registration failed   peer=e4883393 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:00.836] Snapshot extension registration failed   peer=e610b4ed err="peer connected on snap without compatible eth support"
+INFO [05-10|23:20:00.982] Looking for peers                        peercount=1 tried=98  static=0
+INFO [05-10|23:20:01.497] Successfully sealed new block            number=184 sealhash=f1aa04..ef6b2f hash=82befa..9f5419 elapsed=5.351s
+INFO [05-10|23:20:01.497] 🔗 block reached canonical chain          number=177 hash=967ba9..1b78e3
+INFO [05-10|23:20:01.497] 🔨 mined potential block                  number=184 hash=82befa..9f5419
+INFO [05-10|23:20:01.497] Commit new sealing work                  number=185 sealhash=e68b56..e897be uncles=0 txs=0 gas=0     fees=0          elapsed="122.945µs"
+INFO [05-10|23:20:01.497] Commit new sealing work                  number=185 sealhash=e68b56..e897be uncles=0 txs=0 gas=0     fees=0          elapsed="217.089µs"
+WARN [05-10|23:20:02.185] Snapshot extension registration failed   peer=67c6f5f9 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:02.248] Snapshot extension registration failed   peer=4f082b39 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:02.304] Snapshot extension registration failed   peer=6a4d3758 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:02.338] Snapshot extension registration failed   peer=680d6fbc err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:02.427] Snapshot extension registration failed   peer=6371dc0f err="peer connected on snap without compatible eth support"
+INFO [05-10|23:20:04.320] Successfully sealed new block            number=185 sealhash=e68b56..e897be hash=c167b1..a9b2a1 elapsed=2.822s
+INFO [05-10|23:20:04.320] 🔗 block reached canonical chain          number=178 hash=574b11..9020be
+INFO [05-10|23:20:04.320] 🔨 mined potential block                  number=185 hash=c167b1..a9b2a1
+INFO [05-10|23:20:04.320] Commit new sealing work                  number=186 sealhash=f313ef..266b17 uncles=0 txs=0 gas=0     fees=0          elapsed="140.483µs"
+INFO [05-10|23:20:04.320] Commit new sealing work                  number=186 sealhash=f313ef..266b17 uncles=0 txs=0 gas=0     fees=0          elapsed="238.437µs"
+INFO [05-10|23:20:07.043] Successfully sealed new block            number=186 sealhash=f313ef..266b17 hash=584353..103a22 elapsed=2.722s
+INFO [05-10|23:20:07.043] 🔗 block reached canonical chain          number=179 hash=480495..b2cc13
+INFO [05-10|23:20:07.043] 🔨 mined potential block                  number=186 hash=584353..103a22
+INFO [05-10|23:20:07.043] Commit new sealing work                  number=187 sealhash=74429f..326e2e uncles=0 txs=0 gas=0     fees=0          elapsed="101.095µs"
+INFO [05-10|23:20:07.043] Commit new sealing work                  number=187 sealhash=74429f..326e2e uncles=0 txs=0 gas=0     fees=0          elapsed="187.476µs"
+WARN [05-10|23:20:09.261] Snapshot extension registration failed   peer=4fdc6ecb err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:09.309] Snapshot extension registration failed   peer=43627101 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:09.628] Snapshot extension registration failed   peer=f8b18637 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:09.629] Snapshot extension registration failed   peer=632b4b8b err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:09.635] Snapshot extension registration failed   peer=5e8a301e err="peer connected on snap without compatible eth support"
+INFO [05-10|23:20:09.944] Successfully sealed new block            number=187 sealhash=74429f..326e2e hash=3d8d32..6090c8 elapsed=2.901s
+INFO [05-10|23:20:09.944] 🔗 block reached canonical chain          number=180 hash=c1b427..8aaf15
+INFO [05-10|23:20:09.944] 🔨 mined potential block                  number=187 hash=3d8d32..6090c8
+INFO [05-10|23:20:09.944] Commit new sealing work                  number=188 sealhash=f0630d..d43ef6 uncles=0 txs=0 gas=0     fees=0          elapsed="129.031µs"
+INFO [05-10|23:20:09.945] Commit new sealing work                  number=188 sealhash=f0630d..d43ef6 uncles=0 txs=0 gas=0     fees=0          elapsed="226.537µs"
+INFO [05-10|23:20:10.750] Successfully sealed new block            number=188 sealhash=f0630d..d43ef6 hash=efac61..4ec322 elapsed=805.489ms
+INFO [05-10|23:20:10.750] 🔗 block reached canonical chain          number=181 hash=2a1148..4c9666
+INFO [05-10|23:20:10.757] Commit new sealing work                  number=189 sealhash=6a800f..dfe824 uncles=0 txs=0 gas=0     fees=0          elapsed=7.136ms
+INFO [05-10|23:20:10.757] Commit new sealing work                  number=189 sealhash=6a800f..dfe824 uncles=0 txs=0 gas=0     fees=0          elapsed=7.228ms
+INFO [05-10|23:20:10.757] 🔨 mined potential block                  number=188 hash=efac61..4ec322
+WARN [05-10|23:20:10.869] Snapshot extension registration failed   peer=626e3def err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:10.870] Snapshot extension registration failed   peer=725136eb err="peer connected on snap without compatible eth support"
+INFO [05-10|23:20:11.158] Looking for peers                        peercount=1 tried=161 static=0
+INFO [05-10|23:20:12.283] Successfully sealed new block            number=189 sealhash=6a800f..dfe824 hash=8b4d83..23d91a elapsed=1.532s
+INFO [05-10|23:20:12.283] 🔗 block reached canonical chain          number=182 hash=f8adcf..231b8f
+INFO [05-10|23:20:12.283] 🔨 mined potential block                  number=189 hash=8b4d83..23d91a
+INFO [05-10|23:20:12.283] Commit new sealing work                  number=190 sealhash=fde60a..93bac6 uncles=0 txs=0 gas=0     fees=0          elapsed="129.86µs"
+INFO [05-10|23:20:12.283] Commit new sealing work                  number=190 sealhash=fde60a..93bac6 uncles=0 txs=0 gas=0     fees=0          elapsed="229.075µs"
+INFO [05-10|23:20:13.651] Successfully sealed new block            number=190 sealhash=fde60a..93bac6 hash=3384e9..0b1e99 elapsed=1.368s
+INFO [05-10|23:20:13.651] 🔗 block reached canonical chain          number=183 hash=c30b0f..040167
+INFO [05-10|23:20:13.651] 🔨 mined potential block                  number=190 hash=3384e9..0b1e99
+INFO [05-10|23:20:13.651] Commit new sealing work                  number=191 sealhash=e14b33..4d4e31 uncles=0 txs=0 gas=0     fees=0          elapsed="114.945µs"
+INFO [05-10|23:20:13.652] Commit new sealing work                  number=191 sealhash=e14b33..4d4e31 uncles=0 txs=0 gas=0     fees=0          elapsed="239.493µs"
+INFO [05-10|23:20:15.258] Successfully sealed new block            number=191 sealhash=e14b33..4d4e31 hash=862151..fbc840 elapsed=1.606s
+INFO [05-10|23:20:15.258] 🔗 block reached canonical chain          number=184 hash=82befa..9f5419
+INFO [05-10|23:20:15.258] 🔨 mined potential block                  number=191 hash=862151..fbc840
+INFO [05-10|23:20:15.258] Commit new sealing work                  number=192 sealhash=71d8b7..e7ec31 uncles=0 txs=0 gas=0     fees=0          elapsed="182.443µs"
+INFO [05-10|23:20:15.258] Commit new sealing work                  number=192 sealhash=71d8b7..e7ec31 uncles=0 txs=0 gas=0     fees=0          elapsed="283.392µs"
+INFO [05-10|23:20:19.225] Successfully sealed new block            number=192 sealhash=71d8b7..e7ec31 hash=fc0e7f..c1db2d elapsed=3.967s
+INFO [05-10|23:20:19.225] 🔗 block reached canonical chain          number=185 hash=c167b1..a9b2a1
+INFO [05-10|23:20:19.225] 🔨 mined potential block                  number=192 hash=fc0e7f..c1db2d
+INFO [05-10|23:20:19.225] Commit new sealing work                  number=193 sealhash=d892bf..af67cf uncles=0 txs=0 gas=0     fees=0          elapsed="143.609µs"
+INFO [05-10|23:20:19.226] Commit new sealing work                  number=193 sealhash=d892bf..af67cf uncles=0 txs=0 gas=0     fees=0          elapsed="235.32µs"
+INFO [05-10|23:20:21.190] Looking for peers                        peercount=0 tried=72  static=0
+INFO [05-10|23:20:23.495] Successfully sealed new block            number=193 sealhash=d892bf..af67cf hash=d302d7..93cb3f elapsed=4.269s
+INFO [05-10|23:20:23.495] 🔗 block reached canonical chain          number=186 hash=584353..103a22
+INFO [05-10|23:20:23.495] 🔨 mined potential block                  number=193 hash=d302d7..93cb3f
+INFO [05-10|23:20:23.496] Commit new sealing work                  number=194 sealhash=3c34e3..c818f9 uncles=0 txs=0 gas=0     fees=0          elapsed="130.563µs"
+INFO [05-10|23:20:23.496] Commit new sealing work                  number=194 sealhash=3c34e3..c818f9 uncles=0 txs=0 gas=0     fees=0          elapsed="245.298µs"
+WARN [05-10|23:20:23.839] Snapshot extension registration failed   peer=7f87c010 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:20:24.771] Successfully sealed new block            number=194 sealhash=3c34e3..c818f9 hash=77c1cc..1d419f elapsed=1.275s
+INFO [05-10|23:20:24.771] 🔗 block reached canonical chain          number=187 hash=3d8d32..6090c8
+INFO [05-10|23:20:24.771] 🔨 mined potential block                  number=194 hash=77c1cc..1d419f
+INFO [05-10|23:20:24.771] Commit new sealing work                  number=195 sealhash=c9fd7c..adb955 uncles=0 txs=0 gas=0     fees=0          elapsed="108.587µs"
+INFO [05-10|23:20:24.771] Commit new sealing work                  number=195 sealhash=c9fd7c..adb955 uncles=0 txs=0 gas=0     fees=0          elapsed="218.231µs"
+INFO [05-10|23:20:27.694] Successfully sealed new block            number=195 sealhash=c9fd7c..adb955 hash=3210f5..830f56 elapsed=2.922s
+INFO [05-10|23:20:27.694] 🔗 block reached canonical chain          number=188 hash=efac61..4ec322
+INFO [05-10|23:20:27.701] Commit new sealing work                  number=196 sealhash=7b3c2e..2fc2ad uncles=0 txs=0 gas=0     fees=0          elapsed=6.777ms
+INFO [05-10|23:20:27.701] Commit new sealing work                  number=196 sealhash=7b3c2e..2fc2ad uncles=0 txs=0 gas=0     fees=0          elapsed=6.868ms
+INFO [05-10|23:20:27.701] 🔨 mined potential block                  number=195 hash=3210f5..830f56
+INFO [05-10|23:20:28.008] Successfully sealed new block            number=196 sealhash=7b3c2e..2fc2ad hash=740799..2ffc07 elapsed=313.955ms
+INFO [05-10|23:20:28.008] 🔗 block reached canonical chain          number=189 hash=8b4d83..23d91a
+INFO [05-10|23:20:28.008] 🔨 mined potential block                  number=196 hash=740799..2ffc07
+INFO [05-10|23:20:28.009] Commit new sealing work                  number=197 sealhash=bea849..3c2dd3 uncles=0 txs=0 gas=0     fees=0          elapsed="108.527µs"
+INFO [05-10|23:20:28.009] Commit new sealing work                  number=197 sealhash=bea849..3c2dd3 uncles=0 txs=0 gas=0     fees=0          elapsed="193.731µs"
+WARN [05-10|23:20:30.276] Snapshot extension registration failed   peer=5bcc83dc err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:30.298] Snapshot extension registration failed   peer=10cb30e9 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:20:30.532] Successfully sealed new block            number=197 sealhash=bea849..3c2dd3 hash=e4ce00..1253ab elapsed=2.523s
+INFO [05-10|23:20:30.532] 🔗 block reached canonical chain          number=190 hash=3384e9..0b1e99
+INFO [05-10|23:20:30.533] 🔨 mined potential block                  number=197 hash=e4ce00..1253ab
+INFO [05-10|23:20:30.533] Commit new sealing work                  number=198 sealhash=ae77b3..c14775 uncles=0 txs=0 gas=0     fees=0          elapsed="162.348µs"
+INFO [05-10|23:20:30.533] Commit new sealing work                  number=198 sealhash=ae77b3..c14775 uncles=0 txs=0 gas=0     fees=0          elapsed="269.272µs"
+INFO [05-10|23:20:31.688] Looking for peers                        peercount=0 tried=178 static=0
+INFO [05-10|23:20:35.130] Successfully sealed new block            number=198 sealhash=ae77b3..c14775 hash=31bf13..960dc1 elapsed=4.597s
+INFO [05-10|23:20:35.130] 🔗 block reached canonical chain          number=191 hash=862151..fbc840
+INFO [05-10|23:20:35.137] Commit new sealing work                  number=199 sealhash=4b66c2..90c5fc uncles=0 txs=0 gas=0     fees=0          elapsed=6.734ms
+INFO [05-10|23:20:35.137] Commit new sealing work                  number=199 sealhash=4b66c2..90c5fc uncles=0 txs=0 gas=0     fees=0          elapsed=6.825ms
+INFO [05-10|23:20:35.137] 🔨 mined potential block                  number=198 hash=31bf13..960dc1
+INFO [05-10|23:20:37.104] Successfully sealed new block            number=199 sealhash=4b66c2..90c5fc hash=136854..db2ffa elapsed=1.973s
+INFO [05-10|23:20:37.104] 🔗 block reached canonical chain          number=192 hash=fc0e7f..c1db2d
+INFO [05-10|23:20:37.113] Commit new sealing work                  number=200 sealhash=38b2d6..804989 uncles=0 txs=0 gas=0     fees=0          elapsed=8.804ms
+INFO [05-10|23:20:37.113] Commit new sealing work                  number=200 sealhash=38b2d6..804989 uncles=0 txs=0 gas=0     fees=0          elapsed=8.918ms
+INFO [05-10|23:20:37.113] 🔨 mined potential block                  number=199 hash=136854..db2ffa
+INFO [05-10|23:20:40.133] Successfully sealed new block            number=200 sealhash=38b2d6..804989 hash=632f7a..b37ea1 elapsed=3.028s
+INFO [05-10|23:20:40.133] 🔗 block reached canonical chain          number=193 hash=d302d7..93cb3f
+INFO [05-10|23:20:40.133] 🔨 mined potential block                  number=200 hash=632f7a..b37ea1
+INFO [05-10|23:20:40.133] Commit new sealing work                  number=201 sealhash=0fb233..412a7a uncles=0 txs=0 gas=0     fees=0          elapsed="130.649µs"
+INFO [05-10|23:20:40.133] Commit new sealing work                  number=201 sealhash=0fb233..412a7a uncles=0 txs=0 gas=0     fees=0          elapsed="243.506µs"
+INFO [05-10|23:20:41.690] Looking for peers                        peercount=0 tried=123 static=0
+INFO [05-10|23:20:43.988] Successfully sealed new block            number=201 sealhash=0fb233..412a7a hash=d1edda..2352a5 elapsed=3.854s
+INFO [05-10|23:20:43.988] 🔗 block reached canonical chain          number=194 hash=77c1cc..1d419f
+INFO [05-10|23:20:43.988] 🔨 mined potential block                  number=201 hash=d1edda..2352a5
+INFO [05-10|23:20:43.989] Commit new sealing work                  number=202 sealhash=a88598..9aa41d uncles=0 txs=0 gas=0     fees=0          elapsed="296.658µs"
+INFO [05-10|23:20:43.989] Commit new sealing work                  number=202 sealhash=a88598..9aa41d uncles=0 txs=0 gas=0     fees=0          elapsed="434.057µs"
+WARN [05-10|23:20:44.837] Snapshot extension registration failed   peer=ca6e1c50 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:45.128] Snapshot extension registration failed   peer=93a49c92 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:45.337] Snapshot extension registration failed   peer=a840aa9d err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:45.635] Snapshot extension registration failed   peer=29239e1f err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:45.807] Snapshot extension registration failed   peer=4e705af7 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:45.822] Snapshot extension registration failed   peer=6fc9a68f err="peer connected on snap without compatible eth support"
+INFO [05-10|23:20:51.758] Looking for peers                        peercount=0 tried=241 static=0
+INFO [05-10|23:20:56.376] Successfully sealed new block            number=202 sealhash=a88598..9aa41d hash=06a8ac..eb012b elapsed=12.386s
+INFO [05-10|23:20:56.376] 🔗 block reached canonical chain          number=195 hash=3210f5..830f56
+INFO [05-10|23:20:56.376] 🔨 mined potential block                  number=202 hash=06a8ac..eb012b
+INFO [05-10|23:20:56.376] Commit new sealing work                  number=203 sealhash=8294c2..433a1f uncles=0 txs=0 gas=0     fees=0          elapsed="124.328µs"
+INFO [05-10|23:20:56.376] Commit new sealing work                  number=203 sealhash=8294c2..433a1f uncles=0 txs=0 gas=0     fees=0          elapsed="219.071µs"
+WARN [05-10|23:20:58.563] Snapshot extension registration failed   peer=fedd546a err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:59.311] Snapshot extension registration failed   peer=6f0b649e err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:59.462] Snapshot extension registration failed   peer=6fc90295 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:59.506] Snapshot extension registration failed   peer=6c86139a err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:59.507] Snapshot extension registration failed   peer=6d1b9705 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:59.805] Snapshot extension registration failed   peer=69cf1507 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:59.816] Snapshot extension registration failed   peer=502d55f7 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:59.954] Snapshot extension registration failed   peer=f397c6ff err="peer connected on snap without compatible eth support"
+WARN [05-10|23:20:59.986] Snapshot extension registration failed   peer=680d6fbc err="peer connected on snap without compatible eth support"
+WARN [05-10|23:21:00.578] Snapshot extension registration failed   peer=6668320d err="peer connected on snap without compatible eth support"
+INFO [05-10|23:21:00.643] Successfully sealed new block            number=203 sealhash=8294c2..433a1f hash=52a869..289ae7 elapsed=4.266s
+INFO [05-10|23:21:00.643] 🔗 block reached canonical chain          number=196 hash=740799..2ffc07
+INFO [05-10|23:21:00.643] 🔨 mined potential block                  number=203 hash=52a869..289ae7
+INFO [05-10|23:21:00.643] Commit new sealing work                  number=204 sealhash=9e0cfb..84c86a uncles=0 txs=0 gas=0     fees=0          elapsed="192.555µs"
+INFO [05-10|23:21:00.643] Commit new sealing work                  number=204 sealhash=9e0cfb..84c86a uncles=0 txs=0 gas=0     fees=0          elapsed="265.488µs"
+WARN [05-10|23:21:00.653] Snapshot extension registration failed   peer=247d7996 err="peer connected on snap without compatible eth support"
+WARN [05-10|23:21:00.691] Snapshot extension registration failed   peer=692f715c err="peer connected on snap without compatible eth support"
+WARN [05-10|23:21:01.034] Snapshot extension registration failed   peer=7103ea46 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:21:01.851] Looking for peers                        peercount=0 tried=124 static=0
+WARN [05-10|23:21:01.957] Snapshot extension registration failed   peer=7ce1caeb err="peer connected on snap without compatible eth support"
+WARN [05-10|23:21:03.412] Snapshot extension registration failed   peer=85f15fbe err="peer connected on snap without compatible eth support"
+WARN [05-10|23:21:03.763] Snapshot extension registration failed   peer=0124e164 err="peer connected on snap without compatible eth support"
+INFO [05-10|23:21:04.183] Successfully sealed new block            number=204 sealhash=9e0cfb..84c86a hash=2c4746..8d9074 elapsed=3.539s
+INFO [05-10|23:21:04.183] 🔗 block reached canonical chain          number=197 hash=e4ce00..1253ab
+INFO [05-10|23:21:04.183] 🔨 mined potential block                  number=204 hash=2c4746..8d9074
+INFO [05-10|23:21:04.183] Commit new sealing work                  number=205 sealhash=37e681..ccbfc2 uncles=0 txs=0 gas=0     fees=0          elapsed="225.448µs"
+INFO [05-10|23:21:04.183] Commit new sealing work                  number=205 sealhash=37e681..ccbfc2 uncles=0 txs=0 gas=0     fees=0          elapsed="333.807µs"

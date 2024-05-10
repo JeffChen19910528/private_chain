@@ -1,43 +1,40 @@
 pragma solidity ^0.8.0;
 
 contract Test {
-    mapping(address => uint256) private balances;
-    address public owner;
-    event Deposit(address indexed depositor, uint256 amount);
-    event Withdrawal(address indexed withdrawer, uint256 amount);
-    event Transfer(address indexed to, uint amount);
+       string public name = "Sample Token";
+    string public symbol = "SMP";
+    uint256 public totalSupply = 1000000;
+    mapping(address => uint256) public balanceOf;
+    mapping(address => mapping(address => uint256)) public allowance;
 
-     constructor() {
-        owner = msg.sender;
+    constructor() {
+        balanceOf[msg.sender] = totalSupply;
     }
 
-    function deposit() public payable {
-        require(msg.value > 0, "Deposit amount must be greater than 0");
-        balances[msg.sender] += msg.value;
-        emit Deposit(msg.sender, msg.value);
+    function transfer(address to, uint256 amount) external returns (bool) {
+        require(balanceOf[msg.sender] >= amount, "Not enough tokens");
+        balanceOf[msg.sender] -= amount;
+        balanceOf[to] += amount;
+        emit Transfer(msg.sender, to, amount);
+        return true;
     }
 
-    function withdraw(uint256 amount) public {
-        require(amount > 0, "Withdrawal amount must be greater than 0");
-        require(balances[msg.sender] >= amount, "Insufficient balance");
-
-        balances[msg.sender] -= amount;
-        payable(msg.sender).transfer(amount);
-        emit Withdrawal(msg.sender, amount);
+    function approve(address spender, uint256 amount) external returns (bool) {
+        allowance[msg.sender][spender] = amount;
+        emit Approval(msg.sender, spender, amount);
+        return true;
     }
 
-    function transfer(address payable _to, uint _amount) public {
-        require(msg.sender == owner, "Only the owner can perform this action");
-        require(address(this).balance >= _amount, "Insufficient balance in contract");
-        _to.transfer(_amount);
-        emit Transfer(_to, _amount);
+    function transferFrom(address from, address to, uint256 amount) external returns (bool) {
+        require(allowance[from][msg.sender] >= amount, "Allowance too low");
+        require(balanceOf[from] >= amount, "Balance too low");
+        balanceOf[from] -= amount;
+        balanceOf[to] += amount;
+        allowance[from][msg.sender] -= amount;
+        emit Transfer(from, to, amount);
+        return true;
     }
 
-    function getBalance() public view returns (uint256) {
-        return msg.sender.balance;
-    }
-
-    function getTotalBalance() public view returns (uint256) {
-        return address(this).balance;
-    }
+    event Transfer(address indexed from, address indexed to, uint256 value);
+    event Approval(address indexed owner, address indexed spender, uint256 value);
 }
