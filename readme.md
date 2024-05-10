@@ -1,3 +1,5 @@
+mkdir data
+
 初始化
 geth  --datadir data init genesis.json 
 啟動私有網路,預設8545
