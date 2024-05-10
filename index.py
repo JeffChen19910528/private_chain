@@ -18,7 +18,6 @@ class Contract:
         #print('abi: ' + str(contract_abi))
         contract = web3.eth.contract(address=deployed_contract_address, abi=contract_abi)
         
-<<<<<<< HEAD
         # 發送代幣
         tx = contract.functions.transfer(accounts[2], 100).transact({'from': accounts[1]})
         web3.eth.wait_for_transaction_receipt(tx)
@@ -29,15 +28,6 @@ class Contract:
         print(f'Balance1: {balance}')
         balance = contract.functions.balanceOf(accounts[0]).call()
         print(f'Balance0: {balance}')
-=======
-        # 查詢餘額
-        balance = contract.functions.balanceOf(accounts[0]).call()
-        print(f'Balance: {balance}')
-        
-        # 發送代幣
-        tx = contract.functions.transfer(accounts[1], 100).transact({'from': accounts[0]})
-        web3.eth.wait_for_transaction_receipt(tx)
->>>>>>> 514ac50e17a2ae8b38d0a10cfb68d80c557134d5
 
 class Password:
     def __init__(self):

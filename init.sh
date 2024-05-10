@@ -1,62 +1,34 @@
 #!/bin/bash
 
-declare -a addr arr objaddr
-counter=0
-DIR="$PWD"/data/keystore
+# Define directory path
+DIR="$PWD/data/keystore"
 
-for FILE in "$DIR"/*
-do
-    arr[$counter]="$FILE"
-    counter=$((counter + 1))
-done
-# get address
-count=0
-for i in "${arr[@]}"
-do
-   addr[$count]=$(jq -r '.address' $i)
-   addr[$count]="0x"${addr[$count]}
-   echo ${addr[$count]}
-   count=$((count + 1))
-done
-# write address
-rm address.txt
-count=0
-for i in "${addr[@]}"
-do
-   printf "$i\n" >> address.txt
+# Prepare addresses file and genesis JSON
+echo "Extracting addresses from keystore files..."
+> address.txt  # Clear or create the address file
+jsonobj='{'
+
+# Loop through all files in the directory
+for file in "$DIR"/*; do
+    # Extract address using jq, prepend "0x" and add to address.txt
+    addr=$(jq -r '.address' "$file")
+    echo "0x$addr" >> address.txt
+
+    # Append data to JSON object string
+    jsonobj+='"0x'"$addr"'":{"balance":"200000000000000000000"},'
 done
 
-# create new json object 
-count=0
-len=${#addr[@]}
-len=$((len - 1))
-echo "$len"
-for i in "${addr[@]}"
-do 
-    jsonobj+='"'$i'": {"balance":"200000000000000000000"}'
-    if [ "$count" -lt $len ]; then
-        jsonobj+=','
-    else
-         jsonobj+='}'
-    fi
-    count=$((count + 1))
-done
-echo $jsonobj
-data= jq -r '.alloc={}' genesis.json
+# Correctly close the JSON object by removing the last comma and adding a closing brace
+jsonobj="${jsonobj%,}}"
+echo "$jsonobj"
 
-data= jq --arg val "$jsonobj" '.alloc= $val' genesis.json > file.json
-# delete backslash and  Quotes 
-sed --in-place 's/\\//g' file.json
-replace='"alloc": {'
-search='"alloc": "'
-result= sed -i "s/$search/$replace/" file.json
-replace='}'
-search='}"'
-result= sed -i "s/$search/$replace/" file.json
+# Rewrite genesis file with the new allocation object
+echo "Updating genesis.json with new allocation..."
+jq --argjson val "$jsonobj" '.alloc = $val' genesis.json > temp_genesis.json
+mv temp_genesis.json genesis.json
 
-echo $result
-# update geth data
-rm genesis.json
-mv file.json genesis.json
-# geth init
+# Initialize geth with the updated genesis block
+echo "Initializing geth with new genesis block..."
 geth --datadir data init genesis.json
+
+echo "Done!"

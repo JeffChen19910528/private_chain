@@ -1,33 +1,21 @@
 #!/bin/bash
 
-declare -a addr 
-count=0
-while IFS= read -r line
-do
-  addr[$count]=$line
-  #echo "$line"
-  count=$((count + 1))
-done < "address.txt"
-
+# Read addresses from address.txt
+mapfile -t addr < "address.txt"
 #echo "${addr[@]}"
 
-#get password.txt lines
-mapfile -t lines < password.txt
-count=0
-for line in "${lines[@]}"; do
-   count=$((count + 1))
-done
+# Get password.txt lines and count
+mapfile -t lines < "password.txt"
+num_accounts=${#lines[@]}  # Get the number of accounts from the length of lines array
 
-counts=0
-count=$((count - 1))
+# Build a comma-separated list of account indexes
+accounts=$(seq 0 $((num_accounts - 1)) | paste -sd ',' -)
+#echo $accounts
 
-for line in "${lines[@]}"; do
-   accounts+=$counts
-   if [ $counts -lt $count ] ;then
-      accounts+=','
-   fi
-   counts=$((counts + 1))
-done
+# Start Ethereum using geth with specified configuration
+geth --datadir "data" --networkid 10 --http \
+     --http.addr 0.0.0.0 --http.vhosts "*" --http.api "db,net,eth,web3,personal" \
+     --http.corsdomain "*" --snapshot=false --allow-insecure-unlock \
+     --unlock "$accounts" --password "password.txt" console 2> 1.log
 
-# start ethereum
-geth --datadir "data" --networkid 10 --http --http.addr 0.0.0.0 --http.vhosts "*" --http.api "db,net,eth,web3,personal" --http.corsdomain "*" --snapshot=false --allow-insecure-unlock --unlock ${accounts} --password "password.txt" console 2> 1.log
+echo "Geth is running..."
