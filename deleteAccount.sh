@@ -1,86 +1,86 @@
 #!/bin/bash
 
-# 文件名作为脚本的第一个参数
+# The filename as the first argument of the script
 FILES="password.txt"
 
-# 定义一个函数来显示文件的当前内容
+# Define a function to display the current content of the file
 display_file_content() {
-    echo "当前文件内容："
-    nl -ba "$FILES"  # nl命令用于添加行号并打印文件内容
+    echo "Current file content:"
+    nl -ba "$FILES"  # The nl command is used to add line numbers and print the content of the file
     echo "----------------------------"
 }
 
-# 检查文件是否存在，如果不存在，则创建
+# Check if the file exists, if not, create it
 if [ ! -f "$FILES" ]; then
-    echo "文件不存在，创建新文件：$FILES"
+    echo "File does not exist, creating new file: $FILES"
     touch "$FILES"
 fi
 
-# 显示初始内容
+# Display the initial content
 display_file_content
 
-# 定义一个函数用于删除指定行号的内容
+# Define a function to delete the content of a specified line number
 delete_line() {
     sed -i "${1}d" "$FILES"
 }
 
-# 指定文件夹路径
+# Specify the folder path
 DIR_PATH="$PWD/data/keystore"
 
-# 初始化地址数组和地址到文件路径的映射
+# Initialize an array of addresses and a map from addresses to file paths
 declare -a ADDRESS_ARRAY
 declare -A ADDRESS_TO_FILE_MAP
 
-# 检查文件夹是否存在
+# Check if the folder exists
 if [ ! -d "$DIR_PATH" ]; then
-    echo "文件夹不存在: $DIR_PATH"
+    echo "Folder does not exist: $DIR_PATH"
     exit 1
 fi
 
-# 读取文件夹中的每个JSON文件
+# Read each JSON file in the folder
 for FILE in "$DIR_PATH"/*; do
-    # 使用jq工具读取每个JSON文件中的address值
+    # Use the jq tool to read the address value from each JSON file
     ADDRESS=$(jq -r '.address' "$FILE" 2>/dev/null)
 
-    # 检查地址是否非空
+    # Check if the address is non-empty
     if [ -n "$ADDRESS" ] && [ "$ADDRESS" != "null" ]; then
         ADDRESS_ARRAY+=("$ADDRESS")
         ADDRESS_TO_FILE_MAP["$ADDRESS"]="$FILE"
     fi
 done
 
-# 显示所有读取的地址值
-echo "所有读取的地址值："
+# Display all the addresses retrieved
+echo "All retrieved addresses:"
 for i in "${!ADDRESS_ARRAY[@]}"; do
     echo "$((i + 1))) ${ADDRESS_ARRAY[$i]}"
 done
 
-# 提示用户输入要删除的地址代号
-read -p "请输入要删除的地址代号: " INDEX
+# Prompt the user to enter the address code to delete
+read -p "Please enter the address code to delete: " INDEX
 let INDEX=INDEX-1
 
-# 验证输入是否为数字和在有效范围内
+# Validate the input as a number and within a valid range
 if ! [[ $INDEX =~ ^[0-9]+$ ]] || [[ "$INDEX" -lt 0 || "$INDEX" -ge "${#ADDRESS_ARRAY[@]}" ]]; then
-    echo "请输入一个有效的地址代号。"
+    echo "Please enter a valid address code."
     exit 1
 fi
 
-# 获取要删除的文件路径
+# Get the file path to be deleted
 DELETE_FILE="${ADDRESS_TO_FILE_MAP["${ADDRESS_ARRAY[$INDEX]}"]}"
 
-# 删除文件
+# Delete the file
 if [ -n "$DELETE_FILE" ]; then
-    echo "正在删除文件: $DELETE_FILE"
+    echo "Deleting file: $DELETE_FILE"
     rm "$DELETE_FILE"
-    echo "文件已删除。"
+    echo "File deleted."
 else
-    echo "未找到与选择的地址相关联的文件。"
+    echo "No file associated with the selected address was found."
 fi
 
-# 调用函数删除指定行号的内容
+# Call the function to delete the content at the specified line number
 delete_line $((INDEX + 1))
 
-# 最后，再次显示文件的最终内容
+# Finally, display the file's final content again
 display_file_content
-echo "更新完成。"
+echo "Update completed."
 ./init.sh
