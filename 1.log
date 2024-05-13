@@ -1,82 +1,60 @@
-INFO [05-10|23:40:18.360] Maximum peer count                       ETH=50 LES=0 total=50
-INFO [05-10|23:40:18.361] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
-INFO [05-10|23:40:18.364] Snap sync requested, enabling --snapshot 
-INFO [05-10|23:40:18.364] Set global gas cap                       cap=50,000,000
-INFO [05-10|23:40:18.366] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
-INFO [05-10|23:40:18.366] Allocated cache and file handles         database=/home/jeff/private_chain/data/geth/chaindata cache=512.00MiB handles=524,288
-INFO [05-10|23:40:18.381] Opened ancient database                  database=/home/jeff/private_chain/data/geth/chaindata/ancient/chain readonly=false
-INFO [05-10|23:40:18.382]  
-INFO [05-10|23:40:18.382] --------------------------------------------------------------------------------------------------------------------------------------------------------- 
-INFO [05-10|23:40:18.382] Chain ID:  10 (unknown) 
-INFO [05-10|23:40:18.382] Consensus: unknown 
-INFO [05-10|23:40:18.382]  
-INFO [05-10|23:40:18.382] Pre-Merge hard forks: 
-INFO [05-10|23:40:18.382]  - Homestead:                   0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/homestead.md) 
-INFO [05-10|23:40:18.382]  - Tangerine Whistle (EIP 150): 0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/tangerine-whistle.md) 
-INFO [05-10|23:40:18.382]  - Spurious Dragon/1 (EIP 155): 0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md) 
-INFO [05-10|23:40:18.382]  - Spurious Dragon/2 (EIP 158): 0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md) 
-INFO [05-10|23:40:18.382]  - Byzantium:                   0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/byzantium.md) 
-INFO [05-10|23:40:18.382]  - Constantinople:              0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/constantinople.md) 
-INFO [05-10|23:40:18.382]  - Petersburg:                  <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/petersburg.md) 
-INFO [05-10|23:40:18.383]  - Istanbul:                    <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/istanbul.md) 
-INFO [05-10|23:40:18.383]  - Berlin:                      <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/berlin.md) 
-INFO [05-10|23:40:18.383]  - London:                      <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/london.md) 
-INFO [05-10|23:40:18.383]  
-INFO [05-10|23:40:18.383] The Merge is not yet available for this network! 
-INFO [05-10|23:40:18.383]  - Hard-fork specification: https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md 
-INFO [05-10|23:40:18.383] --------------------------------------------------------------------------------------------------------------------------------------------------------- 
-INFO [05-10|23:40:18.383]  
-INFO [05-10|23:40:18.383] Disk storage enabled for ethash caches   dir=/home/jeff/private_chain/data/geth/ethash count=3
-INFO [05-10|23:40:18.383] Disk storage enabled for ethash DAGs     dir=/home/jeff/.ethash count=2
-INFO [05-10|23:40:18.384] Initialising Ethereum protocol           network=10 dbversion=8
-INFO [05-10|23:40:18.384] Loaded most recent local header          number=0 hash=d89881..a54163 td=8192 age=55y1mo3w
-INFO [05-10|23:40:18.384] Loaded most recent local full block      number=0 hash=d89881..a54163 td=8192 age=55y1mo3w
-INFO [05-10|23:40:18.384] Loaded most recent local fast block      number=0 hash=d89881..a54163 td=8192 age=55y1mo3w
-WARN [05-10|23:40:18.384] Loaded snapshot journal                  diffs=missing
-INFO [05-10|23:40:18.385] Loaded local transaction journal         transactions=0 dropped=0
-INFO [05-10|23:40:18.385] Regenerated local transaction journal    transactions=0 accounts=0
-INFO [05-10|23:40:18.385] Gasprice oracle is ignoring threshold set threshold=2
-WARN [05-10|23:40:18.386] Unclean shutdown detected                booted=2024-05-10T23:36:36+0800 age=3m42s
-WARN [05-10|23:40:18.386] Unclean shutdown detected                booted=2024-05-10T23:39:52+0800 age=26s
-WARN [05-10|23:40:18.386] Engine API enabled                       protocol=eth
-WARN [05-10|23:40:18.386] Engine API started but chain not configured for merge yet 
-INFO [05-10|23:40:18.386] Starting peer-to-peer node               instance=Geth/v1.10.26-stable-e5eb32ac/linux-amd64/go1.18.5
-INFO [05-10|23:40:18.396] New local node record                    seq=1,715,355,396,108 id=ae753f0b4f5f4c14 ip=127.0.0.1 udp=30303 tcp=30303
-INFO [05-10|23:40:18.397] IPC endpoint opened                      url=/home/jeff/private_chain/data/geth.ipc
-ERROR[05-10|23:40:18.397] Unavailable modules in HTTP API list     unavailable=[db] available="[admin debug web3 eth txpool personal ethash miner net]"
-INFO [05-10|23:40:18.397] Loaded JWT secret file                   path=/home/jeff/private_chain/data/geth/jwtsecret crc32=0x9a79ac8
-INFO [05-10|23:40:18.398] HTTP server started                      endpoint=[::]:8545 auth=false prefix= cors=* vhosts=*
-INFO [05-10|23:40:18.398] Started P2P networking                   self=enode://b2a79d02e75ad26e1f9aedf0fa855c38209af0d3896baf4ecce05efda4815422fdb53bb61403cf7346bb6f97df21788e2135884c7c9b7a365ed5ad97556648fe@127.0.0.1:30303
-INFO [05-10|23:40:18.398] WebSocket enabled                        url=ws://127.0.0.1:8551
-INFO [05-10|23:40:18.398] HTTP server started                      endpoint=127.0.0.1:8551 auth=true  prefix= cors=localhost vhosts=localhost
-WARN [05-10|23:40:18.398] ------------------------------------------------------------------- 
-WARN [05-10|23:40:18.398] Referring to accounts by order in the keystore folder is dangerous! 
-WARN [05-10|23:40:18.398] This functionality is deprecated and will be removed in the future! 
-WARN [05-10|23:40:18.398] Please use explicit addresses! (can search via `geth account list`) 
-WARN [05-10|23:40:18.399] ------------------------------------------------------------------- 
-INFO [05-10|23:40:19.113] Unlocked account                         address=0x8AE9625821E1bB233432522da632A8F9f2e7A243
-WARN [05-10|23:40:19.113] ------------------------------------------------------------------- 
-WARN [05-10|23:40:19.113] Referring to accounts by order in the keystore folder is dangerous! 
-WARN [05-10|23:40:19.113] This functionality is deprecated and will be removed in the future! 
-WARN [05-10|23:40:19.113] Please use explicit addresses! (can search via `geth account list`) 
-WARN [05-10|23:40:19.113] ------------------------------------------------------------------- 
-INFO [05-10|23:40:19.845] Unlocked account                         address=0x8448Df6E401E4c6696E5145789f820fB97f4a6bc
-INFO [05-10|23:40:19.882] Etherbase automatically configured       address=0x8AE9625821E1bB233432522da632A8F9f2e7A243
-WARN [05-10|23:40:20.104] Snapshot extension registration failed   peer=bd96d12e err="peer connected on snap without compatible eth support"
-WARN [05-10|23:40:20.106] Snapshot extension registration failed   peer=b31a05dd err="peer connected on snap without compatible eth support"
-INFO [05-10|23:40:21.475] New local node record                    seq=1,715,355,396,109 id=ae753f0b4f5f4c14 ip=122.116.36.172 udp=30303 tcp=30303
-INFO [05-10|23:40:28.541] Looking for peers                        peercount=0 tried=89 static=0
-WARN [05-10|23:40:30.367] Snapshot extension registration failed   peer=9212596d err="peer connected on snap without compatible eth support"
-WARN [05-10|23:40:30.543] Snapshot extension registration failed   peer=8c3d4596 err="peer connected on snap without compatible eth support"
-WARN [05-10|23:40:30.556] Snapshot extension registration failed   peer=9b09689a err="peer connected on snap without compatible eth support"
-WARN [05-10|23:40:30.560] Snapshot extension registration failed   peer=81f86ba7 err="peer connected on snap without compatible eth support"
-WARN [05-10|23:40:30.603] Snapshot extension registration failed   peer=96f58b9d err="peer connected on snap without compatible eth support"
-WARN [05-10|23:40:31.152] Snapshot extension registration failed   peer=9b227e8f err="peer connected on snap without compatible eth support"
-WARN [05-10|23:40:31.400] Snapshot extension registration failed   peer=81fcfe01 err="peer connected on snap without compatible eth support"
-WARN [05-10|23:40:31.858] Snapshot extension registration failed   peer=aa6454cb err="peer connected on snap without compatible eth support"
-WARN [05-10|23:40:31.885] Snapshot extension registration failed   peer=ade7fb39 err="peer connected on snap without compatible eth support"
-WARN [05-10|23:40:32.293] Snapshot extension registration failed   peer=982f765d err="peer connected on snap without compatible eth support"
-WARN [05-10|23:40:32.996] Snapshot extension registration failed   peer=988a87c7 err="peer connected on snap without compatible eth support"
-WARN [05-10|23:40:34.289] Snapshot extension registration failed   peer=964026e6 err="peer connected on snap without compatible eth support"
-WARN [05-10|23:40:37.332] Snapshot extension registration failed   peer=af70bc15 err="peer connected on snap without compatible eth support"
-INFO [05-10|23:40:38.704] Looking for peers                        peercount=0 tried=205 static=0
+INFO [05-13|16:50:08.408] Maximum peer count                       ETH=50 LES=0 total=50
+INFO [05-13|16:50:08.410] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+INFO [05-13|16:50:08.413] Snap sync requested, enabling --snapshot 
+INFO [05-13|16:50:08.413] Set global gas cap                       cap=50,000,000
+INFO [05-13|16:50:08.415] Allocated trie memory caches             clean=154.00MiB dirty=256.00MiB
+INFO [05-13|16:50:08.415] Allocated cache and file handles         database=/home/jeff/private_chain/data/geth/chaindata cache=512.00MiB handles=524,288
+INFO [05-13|16:50:08.439] Opened ancient database                  database=/home/jeff/private_chain/data/geth/chaindata/ancient/chain readonly=false
+INFO [05-13|16:50:08.440]  
+INFO [05-13|16:50:08.440] --------------------------------------------------------------------------------------------------------------------------------------------------------- 
+INFO [05-13|16:50:08.440] Chain ID:  10 (unknown) 
+INFO [05-13|16:50:08.440] Consensus: unknown 
+INFO [05-13|16:50:08.440]  
+INFO [05-13|16:50:08.440] Pre-Merge hard forks: 
+INFO [05-13|16:50:08.440]  - Homestead:                   0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/homestead.md) 
+INFO [05-13|16:50:08.440]  - Tangerine Whistle (EIP 150): 0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/tangerine-whistle.md) 
+INFO [05-13|16:50:08.440]  - Spurious Dragon/1 (EIP 155): 0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md) 
+INFO [05-13|16:50:08.440]  - Spurious Dragon/2 (EIP 158): 0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md) 
+INFO [05-13|16:50:08.440]  - Byzantium:                   0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/byzantium.md) 
+INFO [05-13|16:50:08.440]  - Constantinople:              0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/constantinople.md) 
+INFO [05-13|16:50:08.440]  - Petersburg:                  <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/petersburg.md) 
+INFO [05-13|16:50:08.440]  - Istanbul:                    <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/istanbul.md) 
+INFO [05-13|16:50:08.440]  - Berlin:                      <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/berlin.md) 
+INFO [05-13|16:50:08.440]  - London:                      <nil> (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/london.md) 
+INFO [05-13|16:50:08.440]  
+INFO [05-13|16:50:08.440] The Merge is not yet available for this network! 
+INFO [05-13|16:50:08.440]  - Hard-fork specification: https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md 
+INFO [05-13|16:50:08.440] --------------------------------------------------------------------------------------------------------------------------------------------------------- 
+INFO [05-13|16:50:08.440]  
+INFO [05-13|16:50:08.441] Disk storage enabled for ethash caches   dir=/home/jeff/private_chain/data/geth/ethash count=3
+INFO [05-13|16:50:08.441] Disk storage enabled for ethash DAGs     dir=/home/jeff/.ethash count=2
+INFO [05-13|16:50:08.441] Initialising Ethereum protocol           network=10 dbversion=<nil>
+INFO [05-13|16:50:08.441] Loaded most recent local header          number=0 hash=438d05..a061d7 td=8192 age=55y1mo3w
+INFO [05-13|16:50:08.441] Loaded most recent local full block      number=0 hash=438d05..a061d7 td=8192 age=55y1mo3w
+INFO [05-13|16:50:08.442] Loaded most recent local fast block      number=0 hash=438d05..a061d7 td=8192 age=55y1mo3w
+WARN [05-13|16:50:08.442] Failed to load snapshot, regenerating    err="missing or corrupted snapshot"
+INFO [05-13|16:50:08.442] Rebuilding state snapshot 
+INFO [05-13|16:50:08.442] Resuming state snapshot generation       root=9e5458..2822c8 accounts=0 slots=0 storage=0.00B dangling=0 elapsed="321.107µs"
+INFO [05-13|16:50:08.442] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [05-13|16:50:08.442] Generated state snapshot                 accounts=1 slots=0 storage=47.00B dangling=0 elapsed="658.309µs"
+INFO [05-13|16:50:08.442] Gasprice oracle is ignoring threshold set threshold=2
+WARN [05-13|16:50:08.442] Error reading unclean shutdown markers   error="leveldb: not found"
+WARN [05-13|16:50:08.442] Engine API enabled                       protocol=eth
+WARN [05-13|16:50:08.442] Engine API started but chain not configured for merge yet 
+INFO [05-13|16:50:08.443] Starting peer-to-peer node               instance=Geth/v1.10.26-stable-e5eb32ac/linux-amd64/go1.18.5
+INFO [05-13|16:50:08.454] New local node record                    seq=1,715,590,208,454 id=beb063bb9a01f97f ip=127.0.0.1 udp=30303 tcp=30303
+INFO [05-13|16:50:08.455] Started P2P networking                   self=enode://12cca9b5aa42e7a18dc795fad53cc24722846540fb4948f8e31df666ade32acda25ed43505e05015d503902da75e69fd9e31ac6dba3d805ca2978dc96e520a40@127.0.0.1:30303
+INFO [05-13|16:50:08.455] IPC endpoint opened                      url=/home/jeff/private_chain/data/geth.ipc
+ERROR[05-13|16:50:08.455] Unavailable modules in HTTP API list     unavailable=[db] available="[admin debug web3 eth txpool personal ethash miner net]"
+INFO [05-13|16:50:08.456] Generated JWT secret                     path=/home/jeff/private_chain/data/geth/jwtsecret
+INFO [05-13|16:50:08.456] HTTP server started                      endpoint=[::]:8545 auth=false prefix= cors=* vhosts=*
+INFO [05-13|16:50:08.456] WebSocket enabled                        url=ws://127.0.0.1:8551
+INFO [05-13|16:50:08.456] HTTP server started                      endpoint=127.0.0.1:8551 auth=true  prefix= cors=localhost vhosts=localhost
+WARN [05-13|16:50:08.456] ------------------------------------------------------------------- 
+WARN [05-13|16:50:08.456] Referring to accounts by order in the keystore folder is dangerous! 
+WARN [05-13|16:50:08.456] This functionality is deprecated and will be removed in the future! 
+WARN [05-13|16:50:08.456] Please use explicit addresses! (can search via `geth account list`) 
+WARN [05-13|16:50:08.456] ------------------------------------------------------------------- 
+INFO [05-13|16:50:09.222] Unlocked account                         address=0x0D3adD4a51B736b5c11721052C4a928D88c591e3
+INFO [05-13|16:50:09.261] Etherbase automatically configured       address=0x0D3adD4a51B736b5c11721052C4a928D88c591e3
+WARN [05-13|16:50:14.358] Snapshot extension registration failed   peer=6b36f791 err="peer connected on snap without compatible eth support"

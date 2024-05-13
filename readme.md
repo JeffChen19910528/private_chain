@@ -1,8 +1,8 @@
-mkdir data
+init project:
+./initproject.sh
 
-初始化
-geth  --datadir data init genesis.json 
-啟動私有網路,預設8545
-geth --datadir "data" --networkid 10 --http --http.addr 0.0.0.0 --http.vhosts "*" --http.api "db,net,eth,web3,personal" --http.corsdomain "*" --snapshot=false --allow-insecure-unlock console 2> 1.log --dev --dev.period 1
+init private chain:
+./init.sh
 
-truffle mignate --network live
+start private chain:
+./start.sh

@@ -1,17 +1,21 @@
 #!/bin/bash
+
+# Compile contracts using Truffle
+echo "Compiling contracts..."
 truffle compile
+
+# Migrate contracts and output to file
+echo "Migrating contracts..."
 truffle migrate --network live > contractAddr.txt
-# find contract address
+
+# Define string to search for
 str2="address:"
 
-if grep -q $str2 contractAddr.txt; then
-  while read line; do 
-	if [[ $line == *$str2* ]]; then
-		# Left to right, after colon string
-		echo ${line##*:} > contractAddr.txt
-	fi
-  done < contractAddr.txt
+# Check if migration was successful and the address was found
+if grep -q "$str2" contractAddr.txt; then
+    # Extract the address and overwrite the file with just the address
+    grep "$str2" contractAddr.txt | cut -d ':' -f 2 | head -n 1 > contractAddr.txt
+    echo "Contract address extracted successfully."
 else
-	echo "migrate failure"
+    echo "Migration failure or contract address not found."
 fi
-
