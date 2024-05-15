@@ -1,6 +1,6 @@
 pragma solidity ^0.8.0;
 
-contract Test {
+contract ERC20Token {
     string public name = "Sample Token";
     string public symbol = "SMP";
     uint256 public totalSupply = 1000000;
