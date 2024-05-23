@@ -27,8 +27,26 @@ class Contract:
         # Send tokens
         tx = contract.functions.transfer(accounts[1], 100).transact({'from': accounts[0]})
         web3.eth.wait_for_transaction_receipt(tx)
+        print("transfer confirmed.")
 
         # Query balance
+        balance = contract.functions.balanceOf(accounts[2]).call()
+        print(f'Balance2: {balance}')
+        balance = contract.functions.balanceOf(accounts[1]).call()
+        print(f'Balance1: {balance}')
+        balance = contract.functions.balanceOf(accounts[0]).call()
+        print(f'Balance0: {balance}')
+
+        # Approve tokens
+        approval_tx = contract.functions.approve(accounts[1], 100).transact({'from': accounts[0]})
+        web3.eth.wait_for_transaction_receipt(approval_tx)
+        print("Approval confirmed.")
+
+        tx_hash = contract.functions.transferFrom(accounts[0], accounts[2], 100).transact({'from': accounts[1]})
+        # 等待交易確認
+        receipt = web3.eth.wait_for_transaction_receipt(tx_hash)
+        print("transferFrom confirmed.")
+
         balance = contract.functions.balanceOf(accounts[2]).call()
         print(f'Balance2: {balance}')
         balance = contract.functions.balanceOf(accounts[1]).call()
