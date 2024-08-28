@@ -1,40 +1,67 @@
 pragma solidity ^0.8.0;
-
+// SPDX-License-Identifier: MIT 
 contract ERC20Token {
-    string public name = "Sample Token";
-    string public symbol = "SMP";
-    uint256 public totalSupply = 1000000;
-    mapping(address => uint256) public balanceOf;
-    mapping(address => mapping(address => uint256)) public allowance;
-
-    constructor() {
-        balanceOf[msg.sender] = totalSupply;
+    // 帳戶結構
+    struct Account {
+        address owner;
+        uint balance;
     }
 
-    function transfer(address to, uint256 amount) external returns (bool) {
-        require(balanceOf[msg.sender] >= amount, "Not enough tokens");
-        balanceOf[msg.sender] -= amount;
-        balanceOf[to] += amount;
-        emit Transfer(msg.sender, to, amount);
-        return true;
+    // 狀態變數
+    Account[] public accounts;
+    mapping(address => uint) public accountIndex; // 透過地址快速找到帳戶索引
+
+    // 事件
+    event AccountCreated(address indexed owner, uint indexed accountIndex);
+    event BalanceChecked(address indexed owner, uint balance);
+    event TransferCompleted(address indexed from, address indexed to, uint amount);
+
+    // 建立帳戶
+    function createAccount(uint initialDeposit) public payable {
+        // 驗證：確保該地址尚未擁有帳戶
+        require(accountIndex[msg.sender] == 0, "You already have an account"); 
+
+        // 驗證：確保存入的 Ether 數量與 initialDeposit 相符
+        require(msg.value == initialDeposit, "Incorrect deposit amount");
+
+        // 建立新帳戶，初始餘額為 initialDeposit
+        uint newAccountIndex = accounts.length;
+        accounts.push(Account({
+            owner: msg.sender,
+            balance: initialDeposit
+        }));
+        accountIndex[msg.sender] = newAccountIndex + 1; // 索引從 1 開始，0 表示未找到
+
+        // 觸發事件
+        emit AccountCreated(msg.sender, newAccountIndex);
     }
 
-    function approve(address spender, uint256 amount) external returns (bool) {
-        allowance[msg.sender][spender] = amount;
-        emit Approval(msg.sender, spender, amount);
-        return true;
+    // 檢查餘額
+     function checkBalance() public returns (uint) {
+        // Validation: Ensure the address has an account
+        uint _accountIndex = accountIndex[msg.sender];
+        require(_accountIndex > 0, "You don't have an account yet");
+
+        return accounts[_accountIndex - 1].balance;
     }
 
-    function transferFrom(address from, address to, uint256 amount) external returns (bool) {
-        require(allowance[from][msg.sender] >= amount, "Allowance too low");
-        require(balanceOf[from] >= amount, "Balance too low");
-        balanceOf[from] -= amount;
-        balanceOf[to] += amount;
-        allowance[from][msg.sender] -= amount;
-        emit Transfer(from, to, amount);
-        return true;
-    }
+    // 轉帳
+    function transfer(address _to, uint _amount) public {
+        // 驗證
+        uint _fromIndex = accountIndex[msg.sender];
+        uint _toIndex = accountIndex[_to];
+        require(_fromIndex > 0, "You don't have an account yet");
+        require(_toIndex > 0, "Recipient does not have an account yet");
+        require(accounts[_fromIndex - 1].balance >= _amount, "Insufficient balance");
 
-    event Transfer(address indexed from, address indexed to, uint256 value);
-    event Approval(address indexed owner, address indexed spender, uint256 value);
+        // 並行控制 (透過餘額檢查防止重複扣款)
+        require(accounts[_fromIndex - 1].balance == checkBalance(), "Account balance has changed, please retry");
+
+        // 執行轉帳
+        accounts[_fromIndex - 1].balance -= _amount;
+        accounts[_toIndex - 1].balance += _amount;
+
+        // 觸發事件
+        emit TransferCompleted(msg.sender, _to, _amount);
+    }
 }
