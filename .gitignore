@@ -1,0 +1,17 @@
+# Local secrets - regenerate via createAccount.sh / decrypt_keystore.py, never commit
+password.txt
+private_key.txt
+address.txt
+.env
+
+# geth chain data and logs
+data/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node/Truffle
+node_modules/
